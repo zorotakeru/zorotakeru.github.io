@@ -1,97 +1,106 @@
-class StarrySky extends React.Component {
-    state = {
-      num: 60,
-      vw: Math.max(document.documentElement.clientWidth, window.innerWidth || 0),
-      vh: Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
-    };
-    starryNight = () => {
-      anime({
-        targets: ["#sky .star"],
-        opacity: [
-          {
-            duration: 700,
-            value: "0"
-          },
-          {
-            duration: 700,
-            value: "1"
-          }
-        ],
-        easing: "linear",
-        loop: true,
-        delay: (el, i) => 50 * i
-      });
-    };
-    shootingStars = () => {
-      anime({
-        targets: ["#shootingstars .wish"],
-        easing: "linear",
-        loop: true,
-        delay: (el, i) => 1000 * i,
-        opacity: [
-          {
-            duration: 700,
-            value: "1"
-          }
-        ],
-        width: [
-          {
-            value: "150px"
-          },
-          {
-            value: "0px"
-          }
-        ],
-        translateX: 350
-      });
-    };
-    randomRadius = () => {
-      return Math.random() * 0.7 + 0.6;
-    };
-    getRandomX = () => {
-      return Math.floor(Math.random() * Math.floor(this.state.vw)).toString();
-    };
-    getRandomY = () => {
-      return Math.floor(Math.random() * Math.floor(this.state.vh)).toString();
-    };
-    componentDidMount() {
-      this.starryNight();
-      this.shootingStars();
-    }
-    render() {
-      const { num } = this.state;
-      return (
-        <div id="App">
-          <svg id="sky">
-            {[...Array(num)].map((x, y) => (
-              <circle
-                cx={this.getRandomX()}
-                cy={this.getRandomY()}
-                r={this.randomRadius()}
-                stroke="none"
-                strokeWidth="0"
-                fill="white"
-                key={y}
-                className="star"
-              />
-            ))}
-          </svg>
-          <div id="shootingstars">
-            {[...Array(60)].map((x, y) => (
-              <div
-                key={y}
-                className="wish"
-                style={{
-                  left: `${this.getRandomY()}px`,
-                  top: `${this.getRandomX()}px`
-                }}
-              />
-            ))}
-          </div>
-        </div>
-      );
-    }
+// Function to create a circle element with random position and radius
+function createCircle(radius, cx, cy) {
+    const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    circle.setAttribute('cx', cx);
+    circle.setAttribute('cy', cy);
+    circle.setAttribute('r', radius);
+    circle.setAttribute('stroke', 'none');
+    circle.setAttribute('fill', 'white');
+    circle.classList.add('star');
+    return circle;
   }
   
-  ReactDOM.render(<StarrySky />, document.getElementById("root"));
+  // Function to create a shooting star element with random position
+  function createShootingStar(left, top) {
+    const div = document.createElement('div');
+    div.style.left = `${left}px`;
+    div.style.top = `${top}px`;
+    div.classList.add('wish');
+    return div;
+  }
   
+  // Function to get random number within a range
+  function getRandomInRange(min, max) {
+    return Math.random() * (max - min) + min;
+  }
+  
+  // Function to get random position for X and Y coordinates
+  function getRandomX(maxX) {
+    return Math.floor(getRandomInRange(0, maxX));
+  }
+  
+  function getRandomY(maxY) {
+    return Math.floor(getRandomInRange(0, maxY));
+  }
+  
+  // Function to start the animation for stars
+  function starryNight() {
+    const stars = document.querySelectorAll('#sky .star');
+    stars.forEach((star, i) => {
+      const duration = 700;
+      const delay = 50 * i;
+      anime({
+        targets: star,
+        opacity: [
+          { value: '0', duration },
+          { value: '1', duration }
+        ],
+        easing: 'linear',
+        loop: true,
+        delay,
+      });
+    });
+  }
+  
+  // Function to start the animation for shooting stars
+  function shootingStars() {
+    const shootingStars = document.querySelectorAll('#shootingstars .wish');
+    shootingStars.forEach((star, i) => {
+      const duration = 700;
+      const delay = 1000 * i;
+      anime({
+        targets: star,
+        opacity: [
+          { value: '1', duration }
+        ],
+        width: [
+          { value: '150px' },
+          { value: '0px' }
+        ],
+        translateX: 350,
+        easing: 'linear',
+        loop: true,
+        delay,
+      });
+    });
+  }
+  
+  // Function to initialize the StarrySky animation
+  function initStarrySky() {
+    const num = 60;
+    const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    const skySvg = document.getElementById('sky');
+    const shootingStarsDiv = document.getElementById('shootingstars');
+    
+    for (let i = 0; i < num; i++) {
+      const radius = getRandomInRange(0.6, 1.3);
+      const cx = getRandomX(vw);
+      const cy = getRandomY(vh);
+      const circle = createCircle(radius, cx, cy);
+      skySvg.appendChild(circle);
+    }
+    
+    for (let i = 0; i < num; i++) {
+      const left = getRandomX(vw);
+      const top = getRandomY(vh);
+      const star = createShootingStar(left, top);
+      shootingStarsDiv.appendChild(star);
+    }
+    
+    starryNight();
+    shootingStars();
+  }
+  
+  // Wait for DOM content to be loaded before initializing the animation
+  document.addEventListener('DOMContentLoaded', initStarrySky);
