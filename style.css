@@ -1,37 +1,3185 @@
-body {
-    background: linear-gradient(to right, #DA50FF 0%, #50A8FF 100%);
-  }
-  
-  #sky {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    overflow: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+
+
+@font-face {
+	font-family: "UDShinGoPr6";
+	src: url("/usedfont/A-OTF-UDShinGoPr6-Regular.otf") format("opentype"); 
+	font-weight: 400;
+}
+@font-face {
+	font-family: "UDShinGoPr6";
+	src: url("/usedfont/A-OTF-UDShinGoPr6-Light.otf") format("opentype"); 
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "ShinGoPro";
+	src: url("/usedfont/A-OTF-ShinGoPro-DeBold.otf") format("opentype"); 
+	font-weight: 600;
+}
+@font-face {
+	font-family: "ShinGoPro";
+	src: url("/usedfont/A-OTF-ShinGoPro-Medium.otf") format("opentype"); 
+	font-weight: 500;
+}
+@font-face {
+	font-family: "ShinGoPro";
+	src: url("/usedfont/A-OTF-ShinGoPro-Regular.otf") format("opentype"); 
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "UDShinGoCOnizPr6";
+	src: url("/usedfont/A-OTF-UDShinGoCOnizPr6-DeB.otf") format("opentype"); 
+	font-weight: 600;
+}
+@font-face {
+	font-family: "UDShinGoCOnizPr6";
+	src: url("/usedfont/A-OTF-UDShinGoCOnizPr6-Reg.otf") format("opentype"); 
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "blairmditc-tt-medium";
+	src: url("/usedfont/Blaimim.ttf") format("opentype"); 
+}
+
+@font-face {
+    font-family: "FOT-筑紫A丸ゴシック Std*";
+    src: url("/usedfont/筑紫A丸ゴシック.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "TBChibiRGoPlusKStd*";
+    src: url("/usedfont/34831.ttf") format("truetype");
+}
+
+
+body{
     margin: 0;
     padding: 0;
-  }
-  
-  #shootingstars {
-    margin: 0;
-    padding: 0;
-    width: 150vh;
-    height: 100vw;
-    position: fixed;
-    overflow: hidden;
-    transform: translatex(calc(50vw - 50%)) translatey(calc(50vh - 50%))
-      rotate(120deg);
-  }
-  
-  .wish {
-    height: 2px;
-    top: 300px;
-    width: 100px;
-    margin: 0;
-    opacity: 0;
-    padding: 0;
-    background-color: white;
-    position: absolute;
-    background: linear-gradient(-45deg, white, rgba(0, 0, 255, 0));
-    filter: drop-shadow(0 0 6px white);
-    overflow: hidden;
-  }
+}
+@media only screen and (min-width: 375px){
+	header{
+		width: 100%;
+
+		background-color: white;
+
+		margin: 0 auto;
+	}
+	.header-container{
+
+	display: flex;
+
+	justify-content: center;
+
+	align-items: center;
+
+	width: 375px;
+
+	height: 57.3742px;
+
+	border-left: 1px solid black;
+
+	border-right: 1px solid black;
+
+	margin: 0 auto;
+
+	gap: 25px;
+	}
+	.header-logo1{
+
+	width: 141.6753px;
+
+	height: 39.9645px;
+	}
+	.header-logo2{
+
+	width: 134.0595px;
+
+	height: 41.0536px;
+	}
+	.header-mid{
+		
+	height: 41.8535px;
+		
+	width: 0;
+		
+	border-right: 1px solid black;
+	}
+	.container{
+
+	margin: 0 auto;
+
+	display: flex;
+
+	justify-content: center;
+
+	flex-direction: column;
+
+	align-items: center;
+
+	background: linear-gradient(180deg, rgba(239,143,137,1) 0%, rgba(238,132,133,1) 100%);
+	}
+	.content1{
+
+	display: flex;
+
+	flex-direction: column;
+
+	align-items: center;
+
+	width: 375px;
+
+	height: 824.0374px;
+
+	background: url(/images/content1.png) 0 0;
+
+	background-size: cover;
+
+	border-left: 1px solid black;
+
+	border-right: 1px solid black;
+
+	position: relative;
+
+	z-index: 10;
+	}
+	.content1-banner{
+		
+	width: 375px;
+		
+	background-size: cover;
+	}
+	.date-container{
+
+	display: flex;
+
+	margin-top: 15px;
+
+	gap: 5px;
+	}
+	.date-label{
+
+	display: flex;
+
+	flex-direction: column;
+
+	height: 76.5374px;
+
+	margin-top: 14px;
+
+	justify-content: space-between;
+	}
+	.date-label1{
+
+	width: 57.3608px;
+
+	height: 14.5048px;
+
+	background-color: #666464;
+
+	border-radius: 6px;
+
+	font-family: "UDShinGoPr6";
+
+	font-weight: 400;
+
+	font-size: 10px;
+
+	line-height: 14.5048px;
+
+	text-align: center;
+
+	color: white;
+
+	margin: 0;
+	}
+	.date-label2{
+
+	width: 57.3608px;
+
+	height: 14.5048px;
+
+	background-color: #666464;
+
+	border-radius: 6px;
+
+	font-family: "UDShinGoPr6";
+
+	font-weight: 400;
+
+	font-size: 10px;
+
+	line-height: 14.5048px;
+
+	text-align: center;
+
+	color: white;
+
+	margin: 0;
+	}
+	.date-range{
+
+	width: 230.4077px;
+	}
+	.date-range1{
+
+	width: 230.1327px;
+
+	height: 29.9443px;
+	}
+	.date-range2{
+
+	width: 223.8763px;
+
+	height: 17.7056px;
+
+	margin-top: 5px;
+	}
+	.date-range3{
+
+	width: 219.1679px;
+
+	height: 21.2051px;
+
+	margin-top: 12px;
+	}
+	.event-container{
+
+	width: 342.0851px;
+
+	height: 188.5532px;
+
+	background: url(/images/event-container.png) 0 0;
+
+	background-size: contain;
+
+	background-repeat: no-repeat;
+
+	margin: 0 auto;
+	}
+	.event-list{
+
+	width: 315px;
+
+	margin: 0 auto;
+
+	display: grid;
+
+	margin-top: 29px;
+
+	column-gap: 10px;
+
+	justify-content: center;
+	}
+	.event-list1{
+		grid-area: 1 / 1 / 2 / 2;
+		height: fit-content;
+	}
+	.event-list2{
+		grid-area: 2 / 1 / 3 / 2;
+		margin-top: -31px;
+	}
+	.event-list3{
+		grid-area: 3 / 1 / 4 / 2;
+		margin-top: 10px;
+	}
+	.event-list4{
+		grid-area: 1 / 2 / 2 / 3;
+	}
+	.event-label{
+
+	width: 28.6943px;
+
+	height: 13.7271px;
+
+	background-color: white;
+
+	border-radius: 3px;
+
+	font-family: 'FOT-筑紫A丸ゴシック Std*';
+
+	font-size: 9px;
+
+	line-height: 13.7271px;
+
+	color: #5C5A5A;
+
+	text-align: center;
+
+	margin: 0;
+
+	font-weight: bold;
+	}
+	.event-content{
+
+	font-family: 'FOT-筑紫A丸ゴシック Std*';
+
+	font-size: 9px;
+
+	margin: 0;
+
+	margin-top: 3px;
+
+	letter-spacing: 0.008em;
+
+	color: white;
+
+	line-height: 14px;
+	}
+
+
+
+	.content2{
+
+	display: flex;
+
+	flex-direction: column;
+
+	align-items: center;
+
+	width: 375px;
+
+	height: fit-content;
+
+	background: url(/images/content2.png) 0 0;
+
+	background-size: cover;
+
+	border-left: 1px solid black;
+
+	border-right: 1px solid black;
+
+	margin-top: -81px;
+
+	position: relative;
+
+	z-index: 11;
+
+	padding-bottom: 70px;
+	}
+	.tamahiyofamily{
+
+	width: 177.5542px;
+
+	margin-top: 8px;
+	}
+	.event-info{
+		
+	margin: 0;
+		
+	font-family: "blairmditc-tt-medium";
+		
+	font-size: 20px;
+		
+	color: #3551A2;
+		
+	letter-spacing: 0.07em;
+		
+	text-align: center;
+	}
+	.ribbon{
+		
+	width: 375px;
+		
+	height: 66.3047px;
+		
+	background: url(/images/ribbon.png) 0 0;
+		
+	background-size: cover;
+	}
+	.ribbon-en{
+
+	text-align: center;
+
+	margin: 0;
+
+	margin-top: 22px;
+
+	font-family: "blairmditc-tt-medium";
+
+	font-size: 10px;
+
+	letter-spacing: 0.24em;
+
+	color: #3551A2;
+
+	font-weight: bold;
+	}
+	.ribbon-jp{
+		
+	line-height: 22px;
+		
+	text-align: center;
+		
+	margin: 0;
+		
+	margin-top: 6px;
+		
+	font-family: "ShinGoPro";
+		
+	font-size: 19px;
+		
+	letter-spacing: 0.16em;
+		
+	color: #3551A2;
+	}
+	.content2-board{
+		
+	display: flex;
+		
+	flex-direction: column;
+		
+	align-items: center;
+		
+	width: 349.1213px;
+		
+	height: 516.3333px;
+		
+	background: url(/images/content2-board.png) 0 0;
+		
+	background-size: cover;
+		
+	margin-top: 17.3794px;
+		
+	position: relative;
+		
+	z-index: 13;
+		
+	margin-bottom: 42px;
+	}
+	.pin{
+
+	width: 16.6813px;
+
+	height: 20.9907px;
+
+	margin-top: -5px;
+	}
+	.board-event{
+
+	display: flex;
+
+	gap: 8px;
+
+	align-items: center;
+
+	margin-top: 10px;
+
+	margin-bottom: 8px;
+	}
+	.board-label{
+
+	width: 57.3608px;
+
+	height: 14.5048px;
+
+	background-color: #666464;
+
+	border-radius: 6px;
+
+	font-family: "UDShinGoPr6";
+
+	font-weight: 400;
+
+	font-size: 10px;
+
+	line-height: 14.5048px;
+
+	text-align: center;
+
+	color: white;
+
+	margin: 0;
+	}
+	.board-date{
+		
+	width: 211.9065px;
+		
+	height: 50.9305px;
+	}
+	.linepath{
+		
+	width: 315.9431px;
+	}
+	.weekdays-container{
+		
+	display: flex;
+		
+	height: 70px;
+	}
+	.weekdays{
+		
+	width: 78.5px;
+		
+	height: 78.5px;
+		
+	margin-left: -18px;
+		
+	margin-top: -3px;
+	}
+	.weekdays-title{
+
+	font-family: "TBChibiRGoPlusKStd*";
+
+	font-style: italic;
+
+	font-size: 28px;
+
+	color: #E6326E;
+
+	text-align: center;
+
+	line-height: 24px;
+
+	margin: 0;
+
+	margin-left: -6px;
+
+	margin-top: 11px;
+	}
+	.weekdays-title span{
+
+	font-size: 16px;
+
+	letter-spacing: 0.002em;
+
+	color: black;
+
+	font-style: normal;
+
+	margin-left: 10px;
+	}
+	.time-info{
+
+	display: flex;
+
+	align-items: center;
+
+	width: 315.9431px;
+	}
+	.time-label{
+
+	width: 21.9505px;
+
+	height: 10.8519px;
+
+	background-color: #656464;
+
+	font-family: "UDShinGoPr6";
+
+	font-weight: 400;
+
+	font-size: 8px;
+
+	line-height: 10.8519px;
+
+	text-align: center;
+
+	color: white;
+
+	margin: 0;
+	}
+	.time-detail{
+
+	font-family: 'FOT-筑紫A丸ゴシック Std*';
+
+	font-size: 12px;
+
+	margin: 0;
+
+	margin-left: 5px;
+
+	letter-spacing: -0.04em;
+	}
+	.time-detail span{
+
+	font-size: 10px;
+	}
+	.suggestion {
+		
+	margin: 0;
+		
+	width: 315.9431px;
+		
+	font-family: 'FOT-筑紫A丸ゴシック Std*';
+		
+	font-size: 13px;
+		
+	line-height: 14px;
+		
+	letter-spacing: -0.05em;
+		
+	margin-top: 5px;
+		
+	color: #E3007F;
+	}
+	.suggestion-point{
+
+	margin: 0;
+
+	font-family: "UDShinGoPr6";
+
+	font-weight: 300;
+
+	font-size: 7px;
+
+	line-height: 10px;
+
+	margin-top: 8px;
+
+	width: 288.9431px;
+
+	margin-bottom: 8px;
+	}
+	.hand{
+
+	width: 192px;
+
+	position: absolute;
+
+	margin-top: 167px;
+
+	margin-left: 169px;
+	}
+	.weekend{
+			
+	width: 78.5px;
+		
+	height: 78.5px;
+		
+	margin-left: -18px;
+		
+	margin-top: -3px;
+	}
+	.weekend-container{
+		
+	display: flex;
+		
+	height: 70px;
+	}
+	.weekend-title{
+		
+	width: 237.86px;
+		
+	height: 89.2916px;
+		
+	margin-top: 8px;
+		
+	margin-left: 5px;
+	}
+	.lottery{
+		
+	width: 337.6013px;
+		
+	height: 135.1494px;
+		
+	margin-left: 23px;
+		
+	margin-top: -10px;
+	}
+	.content2-board-long{
+			
+	display: flex;
+			
+	flex-direction: column;
+			
+	align-items: center;
+			
+	width: 349.1213px;
+			
+	height: 846.5652px;
+			
+	background: url(/images/content2-board-long.png) 0 0;
+			
+	background-size: cover;
+			
+	margin-top: 17.3794px;
+			
+	position: relative;
+			
+	z-index: 13;
+	}
+	.eventheld{
+
+	display: flex;
+
+	align-items: center;
+
+	justify-content: center;
+
+	gap: 11px;
+
+	margin-top: 0px;
+
+	margin-left: -15px;
+	}
+	.eventheld1{
+
+	font-family: "UDShinGoPr6";
+
+	font-weight: 400;
+
+	font-size: 10px;
+
+	line-height: 14.2211px;
+
+	width: 57.3608px;
+
+	height: 14.2211px;
+
+	border-radius: 6px;
+
+	color: white;
+
+	background-color: #666464;
+
+	text-align: center;
+
+	margin: 0;
+
+	margin-top: 8px;
+	}
+	.eventheld2{
+
+	color: #E50012;
+
+	font-family: "ShinGoPro";
+
+	font-weight: 600;
+
+	font-size: 25px;
+
+	line-height: 36px;
+
+	letter-spacing: 0.012em;
+
+	margin: 0;
+	}
+	.eventheldinfo{
+		
+	margin: 0;
+		
+	font-family: "UDShinGoCOnizPr6";
+		
+	font-weight: 400;
+		
+	font-size: 12px;
+		
+	letter-spacing: 0.004em;
+		
+	line-height: 14px;
+		
+	margin-top: 2px;
+		
+	margin-bottom: 8px;
+	}
+	.song-show{
+
+	margin-top: 10px;
+	}
+	.song-show img{
+
+	width: 307.4095px;
+	}
+	.song-show1{
+
+	font-family: "FOT-筑紫A丸ゴシック Std*";
+
+	margin: 0;
+
+	font-size: 12px;
+
+	letter-spacing: 0.004em;
+
+	margin-top: -62px;
+
+	margin-left: 5px;
+	}
+	.song-show2{
+
+	margin: 0;
+
+	font-family: "ShinGoPro";
+
+	font-weight: 400;
+
+	font-size: 9px;
+
+	color: #3969AB;
+
+	letter-spacing: 0.065em;
+
+	line-height: 12px;
+
+	margin-left: 5px;
+	}
+	.song-show3{
+
+	margin: 0;
+
+	font-family: "UDShinGoPr6";
+
+	font-weight: 300;
+
+	font-size: 7px;
+
+	line-height: 11px;
+
+	margin-left: 5px;
+	}
+	.linepath2{
+
+	width: 310.6224px;
+		
+	margin-top: 4px;
+	}
+	.shimajiro{
+
+	display: flex;
+
+	justify-content: center;
+
+	align-items: center;
+
+	gap: 4px;
+
+	margin-top: 4px;
+
+	margin-bottom: 8px;
+	}
+	.shimajiro1{
+
+	}
+	.shimajiro-logo{
+
+	width: 154.6043px;
+	}
+	.shimajiro-text1{
+
+	font-family: "ShinGoPro";
+
+	font-weight: 500;
+
+	font-size: 11px;
+
+	line-height: 15px;
+
+	color: #344B99;
+
+	margin: 0;
+	}
+	.shimajiro-corp{
+
+	width: 143.9045px;
+
+	margin-top: 12px;
+	}
+	.shimajiro-terms{
+
+	margin: 0;
+
+	font-size: 7px;
+
+	line-height: 8px;
+	}
+	.shimajiro-mascot{
+		
+	width: 154.0463px;
+	}
+	.shimajiro-event{
+
+	display: flex;
+
+	height: fit-content;
+	}
+	.linepath3{
+
+	height: 199.4415px;
+	}
+	.shimajiro-event1{
+
+	width: 153.244px;
+
+	height: 184.4388px;
+
+	margin-top: 10px;
+
+	margin-left: 16px;
+
+	margin-right: 5px;
+	}
+	.shimajiro-event2{
+
+	width: 164.0195px;
+
+	height: 195.1309px;
+
+	margin-left: 7px;
+	}
+	.shimajiro-event3{
+
+	width: 176.818px;
+
+	height: 188.7881px;
+
+	margin-left: -11px;
+
+	margin-top: 9px;
+	}
+	.shimajiro-event4{
+
+	width: 166.9942px;
+
+	height: 200.5712px;
+
+	margin-left: -5px;
+
+	margin-top: 10px;
+	}
+	.ribbon2{
+		
+	font-family: "TBChibiRGoPlusKStd*";
+		
+	font-size: 17px;
+		
+	letter-spacing: 0.15em;
+		
+	font-style: italic;
+		
+	color: white;
+		
+	background: url(/images/ribbon2.png) 0 0;
+		
+	width: 337.7064px;
+		
+	height: 27.0128px;
+		
+	line-height: 23.0128px;
+		
+	background-size: cover;
+		
+	text-align: center;
+		
+	margin: 0;
+		
+	margin-top: 20px;
+	}
+	.october{
+
+	width: 324.8366px;
+
+	margin-top: 15px;
+
+	margin-bottom: 5px;
+	}
+	.november{width: 324.8366px;margin-top: 15px;margin-bottom: 5px;}
+	.date-event1{
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	color: white;
+
+	font-size: 12px;
+
+	margin: 0;
+
+	width: 315px;
+
+	line-height: 15.3868px;
+
+	margin-top: 5px;
+	}
+	.date-event1 span{
+
+	background-color: #E50012;
+
+	clip-path: polygon(0% 0%, 85% 0, 100% 50%, 85% 99%, 0% 100%);
+
+	width: 43.7165px;
+
+	height: 16.3868px;
+
+	display: inline-block;
+
+	padding-left: 5px;
+
+	margin-right: 5px;
+	}
+	.date-event2{font-family: "UDShinGoCOnizPr6";font-weight: 600;color: white;font-size: 12px;margin: 0;width: 315px;line-height: 15.3868px;margin-top: 5px;letter-spacing: 0.03em;}
+	.date-event2 span{
+		
+	background-color: #004098;
+		
+	clip-path: polygon(0% 0%, 85% 0, 100% 50%, 85% 99%, 0% 100%);
+		
+	width: 43.7165px;
+		
+	height: 16.3868px;
+		
+	display: inline-block;
+		
+	padding-left: 5px;
+		
+	margin-right: 5px;
+	}
+
+
+
+	.content3{
+		
+	display: flex;
+		
+	flex-direction: column;
+		
+	align-items: center;
+		
+	width: 375px;
+		
+	height: fit-content;
+		
+	background: url(/images/content3.png) 0 0;
+		
+	background-size: cover;
+		
+	border-left: 1px solid black;
+		
+	border-right: 1px solid black;
+		
+	margin-top: -49px;
+		
+	position: relative;
+		
+	z-index: 12;
+		
+	padding-top: 53px;
+	}
+	.aichi{
+
+	margin: 0;
+
+	width: 106.8699px;
+
+	height: 19.222px;
+
+	line-height: 19.222px;
+
+	border-radius: 9.6px;
+
+	background-color: #F8B500;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 16px;
+
+	color: white;
+
+	text-align: center;
+
+	letter-spacing: 0.24em;
+
+	font-style: italic;
+
+	margin-top: 15px;
+	}
+	.aichi-list{
+
+	gap: 10px;
+
+	display: flex;
+
+	align-items: center;
+
+	margin-top: 10px;
+
+	flex-wrap: wrap;
+	}
+	.aichi-each{display: flex;flex-direction: column;align-items: center;}
+	.aichi-button{
+
+	width: 156px;
+
+	height: 20px;
+
+	display: inline-block;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 16px;
+
+	display: flex;
+
+	background-color: #F8B500;
+
+	border-radius: 10px;
+
+	text-decoration: none;
+
+	color: white;
+
+	font-style: italic;
+
+	justify-content: center;
+
+	letter-spacing: 0.1em;
+
+	align-items: center;
+	}
+	.aichi-button1{
+
+	font-weight: 400;
+
+	font-size: 7px;
+
+	width: 37px;
+
+	display: inline-block;
+
+	line-height: 7px;
+
+	letter-spacing: 0.24em;
+
+	width: 40px;
+
+	margin-left: 3px;
+
+	margin-top: 2px;
+	}
+	.aichi-svg{
+		
+	width: 11px;
+		
+	height: 11px;
+		
+	margin-left: 134px;
+		
+	position: absolute;
+	}
+	.each-image{
+
+	width: 156px;
+
+	margin-top: 5px;
+	}
+	.each-address{
+
+	font-family: "ShinGoPro";
+
+	font-weight: 400;
+
+	margin: 0;
+
+	font-size: 6px;
+
+	letter-spacing: 0.04em;
+	}
+	.each-phone{
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	margin: 0;
+
+	font-size: 16px;
+
+	text-decoration: none;
+
+	color: black;
+
+	width: 156px;
+
+	border-top: 1px solid black;
+
+	text-align: center;
+
+	line-height: 17px;
+
+	letter-spacing: 0.006em;
+	}
+	.each-phone span{
+
+	font-size: 12px;
+	}
+	.linepath4{
+		
+	height: 129.4481px;
+	}
+
+
+	.mie{
+
+	margin: 0;
+
+	width: 106.8699px;
+
+	height: 19.222px;
+
+	line-height: 19.222px;
+
+	border-radius: 9.6px;
+
+	background-color: #45B035;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 16px;
+
+	color: white;
+
+	text-align: center;
+
+	letter-spacing: 0.24em;
+
+	font-style: italic;
+
+	margin-top: 15px;
+
+	margin-bottom: 7px;
+	}
+	.mie-list{
+
+	gap: 10px;
+
+	display: flex;
+
+	margin-top: 2px;
+
+	flex-wrap: wrap;
+
+	align-items: center;
+
+	width: 334.98px;
+	}
+	.mie-each{display: flex;flex-direction: column;align-items: center;}
+	.mie-button{
+
+	width: 156px;
+
+	height: 20px;
+
+	display: inline-block;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 16px;
+
+	display: flex;
+
+	background-color: #45B035;
+
+	border-radius: 10px;
+
+	text-decoration: none;
+
+	color: white;
+
+	font-style: italic;
+
+	justify-content: center;
+
+	letter-spacing: 0.1em;
+
+	align-items: center;
+	}
+	.mie-button1{
+
+	font-weight: 400;
+
+	font-size: 7px;
+
+	width: 37px;
+
+	display: inline-block;
+
+	line-height: 7px;
+
+	letter-spacing: 0.24em;
+
+	width: 40px;
+
+	margin-left: 3px;
+
+	margin-top: 2px;
+	}
+	.mie-svg{
+		
+	width: 11px;
+		
+	height: 11px;
+		
+	margin-left: 134px;
+		
+	position: absolute;
+	}
+	.linepath5{
+
+	width: 346.9014px;
+
+	margin-top: 2px;
+	}
+	.linepath6{
+
+	height: 129.4481px;
+	}
+
+	.gifu-shizuoka{
+		
+	display: flex;
+		
+	justify-content: center;
+		
+	gap: 60px;
+	}
+	.gifu{
+
+	margin: 0;
+
+	width: 106.8699px;
+
+	height: 19.222px;
+
+	line-height: 19.222px;
+
+	border-radius: 9.6px;
+
+	background-color: #006CB8;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 16px;
+
+	color: white;
+
+	text-align: center;
+
+	letter-spacing: 0.24em;
+
+	font-style: italic;
+
+	margin-top: 15px;
+
+	margin-bottom: 7px;
+	}
+	.shizuoka{
+
+	margin: 0;
+
+	width: 106.8699px;
+
+	height: 19.222px;
+
+	line-height: 19.222px;
+
+	border-radius: 9.6px;
+
+	background-color: #B963A4;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 16px;
+
+	color: white;
+
+	text-align: center;
+
+	letter-spacing: 0.24em;
+
+	font-style: italic;
+
+	margin-top: 15px;
+
+	margin-bottom: 7px;
+	}
+
+	.gifu-shizuoka-list{
+
+	gap: 10px;
+
+	display: flex;
+
+	margin-top: 2px;
+
+	flex-wrap: wrap;
+
+	width: 334.98px;
+
+	align-items: center;
+
+	padding-bottom: 30px;
+	}
+	.gifu-each{display: flex;flex-direction: column;align-items: center;}
+	.gifu-button{
+
+	width: 156px;
+
+	height: 20px;
+
+	display: inline-block;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 8px;
+
+	display: flex;
+
+	background-color: #006CB8;
+
+	border-radius: 10px;
+
+	text-decoration: none;
+
+	color: white;
+
+	font-style: italic;
+
+	justify-content: center;
+
+	letter-spacing: 0.1em;
+
+	align-items: center;
+	}
+	.gifu-button1{
+
+	margin-right: 15px;
+
+	margin-top: 2px;
+	}
+	.gifu-svg{
+		
+	width: 11px;
+		
+	height: 11px;
+		
+	margin-left: 134px;
+		
+	position: absolute;
+	}
+
+	.shizuoka-each{display: flex;flex-direction: column;align-items: center;}
+	.shizuoka-button{
+
+	width: 156px;
+
+	height: 20px;
+
+	display: inline-block;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 16px;
+
+	display: flex;
+
+	background-color: #B963A4;
+
+	border-radius: 10px;
+
+	text-decoration: none;
+
+	color: white;
+
+	font-style: italic;
+
+	justify-content: center;
+
+	letter-spacing: 0.1em;
+
+	align-items: center;
+	}
+	.shizuoka-button1{
+
+	font-weight: 400;
+
+	font-size: 7px;
+
+	width: 37px;
+
+	display: inline-block;
+
+	line-height: 7px;
+
+	letter-spacing: 0.24em;
+
+	width: 40px;
+
+	margin-left: 3px;
+
+	margin-top: 2px;
+	}
+	.shizuoka-svg{
+		
+	width: 11px;
+		
+	height: 11px;
+		
+	margin-left: 135px;
+		
+	position: absolute;
+	}
+	.linepath7{
+		
+	height: 129.4481px;
+	}
+
+
+	footer{
+
+	height: 41.3022px;
+
+	width: 100%;
+
+	background-color: white;
+
+	margin: 0 auto;
+	}
+	.footer-container{
+		
+	display: flex;
+		
+	width: 375px;
+		
+	height: 41.3022px;
+		
+	border-left: 1px solid black;
+		
+	border-right: 1px solid black;
+		
+	margin: 0 auto;
+		
+	gap: 0;
+		
+	flex-direction: column;
+		
+	justify-content: center;
+		
+	align-items: center;
+	}
+	.footer-company{
+
+	margin: 0;
+
+	text-align: center;
+
+	font-family: 'Gothic A1', sans-serif;
+
+	font-size: 7px;
+
+	letter-spacing: 0.04em;
+
+	margin-top: 5px;
+	}
+	.footer-copyright{
+
+	margin: 0;
+
+	text-align: center;
+
+	font-family: 'Gothic A1', sans-serif;
+
+	font-size: 7px;
+
+	letter-spacing: 0.04em;
+
+	width: 358.9198px;
+
+	border-top: 1px solid black;
+
+	margin-top: 2px;
+
+	line-height: 15px;
+	}
+}
+
+
+@media only screen and (max-width: 375px) {
+	header{
+		width: 100%;
+
+		background-color: white;
+
+		margin: 0 auto;
+	}
+	.header-container{
+
+	display: flex;
+
+	justify-content: center;
+
+	align-items: center;
+
+	width: 100vw;
+
+	height: 15.299786666666668vw;
+
+	border-left: 0.26666666666666666vw solid black;
+
+	border-right: 0.26666666666666666vw solid black;
+
+	margin: 0 auto;
+
+	gap: 6.666666666666667vw;
+	}
+	.header-logo1{
+
+	width: 37.78008vw;
+
+	height: 10.6572vw;
+	}
+	.header-logo2{
+
+	width: 35.7492vw;
+
+	height: 10.947626666666666vw;
+	}
+	.header-mid{
+		
+	height: 11.160933333333332vw;
+		
+	width: 0;
+		
+	border-right: 0.26666666666666666vw solid black;
+	}
+	.container{
+
+	margin: 0 auto;
+
+	display: flex;
+
+	justify-content: center;
+
+	flex-direction: column;
+
+	align-items: center;
+
+	background: linear-gradient(180deg, rgba(239,143,137,1) 0%, rgba(238,132,133,1) 100%);
+	}
+	.content1{
+
+	display: flex;
+
+	flex-direction: column;
+
+	align-items: center;
+
+	width: 100vw;
+
+	height: 219.74330666666665vw;
+
+	background: url(/images/content1.png) 0 0;
+
+	background-size: cover;
+
+	border-left: 0.26666666666666666vw solid black;
+
+	border-right: 0.26666666666666666vw solid black;
+
+	position: relative;
+
+	z-index: 10;
+	}
+	.content1-banner{
+		
+	width: 100vw;
+		
+	background-size: cover;
+	}
+	.date-container{
+
+	display: flex;
+
+	margin-top: 4vw;
+
+	gap: 1.3333333333333335vw;
+	}
+	.date-label{
+
+	display: flex;
+
+	flex-direction: column;
+
+	height: 20.409973333333333vw;
+
+	margin-top: 3.733333333333334vw;
+
+	justify-content: space-between;
+	}
+	.date-label1{
+
+	width: 15.296213333333334vw;
+
+	height: 3.867946666666666vw;
+
+	background-color: #666464;
+
+	border-radius: 1.6vw;
+
+	font-family: "UDShinGoPr6";
+
+	font-weight: 400;
+
+	font-size: 2.666666666666667vw;
+
+	line-height: 3.867946666666666vw;
+
+	text-align: center;
+
+	color: white;
+
+	margin: 0;
+	}
+	.date-label2{
+
+	width: 15.296213333333334vw;
+
+	height: 3.867946666666666vw;
+
+	background-color: #666464;
+
+	border-radius: 1.6vw;
+
+	font-family: "UDShinGoPr6";
+
+	font-weight: 400;
+
+	font-size: 2.666666666666667vw;
+
+	line-height: 3.867946666666666vw;
+
+	text-align: center;
+
+	color: white;
+
+	margin: 0;
+	}
+	.date-range{
+
+	width: 61.442053333333334vw;
+	}
+	.date-range1{
+
+width: 61.368719999999996vw;
+
+height: 7.985146666666666vw;
+
+}
+	.date-range2{
+
+	width: 59.70034666666666vw;
+
+	height: 4.721493333333333vw;
+
+	margin-top: 1.3333333333333335vw;
+	}
+	.date-range3{
+
+	width: 58.44477333333333vw;
+
+	height: 5.654693333333334vw;
+
+	margin-top: 3.2vw;
+	}
+	.event-container{
+
+	width: 91.22269333333334vw;
+
+	height: 50.28085333333333vw;
+
+	background: url(/images/event-container.png) 0 0;
+
+	background-size: contain;
+
+	background-repeat: no-repeat;
+
+	margin: 0 auto;
+	}
+	.event-list{
+
+	width: 84vw;
+
+	margin: 0 auto;
+
+	display: grid;
+
+	margin-top: 7.733333333333333vw;
+
+	column-gap: 2.666666666666667vw;
+
+	justify-content: center;
+	}
+	.event-list1{
+		grid-area: 1 / 1 / 2 / 2;
+		height: fit-content;
+	}
+	.event-list2{
+		grid-area: 2 / 1 / 3 / 2;
+		margin-top: -8.266666666666666vw;
+	}
+	.event-list3{
+		grid-area: 3 / 1 / 4 / 2;
+		margin-top: 2.666666666666667vw;
+	}
+	.event-list4{
+		grid-area: 1 / 2 / 2 / 3;
+	}
+	.event-label{
+
+	width: 7.651813333333333vw;
+
+	height: 3.6605600000000003vw;
+
+	background-color: white;
+
+	border-radius: 0.8vw;
+
+	font-family: 'FOT-筑紫A丸ゴシック Std*';
+
+	font-size: 2.4vw;
+
+	line-height: 3.6605600000000003vw;
+
+	color: #5C5A5A;
+
+	text-align: center;
+
+	margin: 0;
+
+	font-weight: bold;
+	}
+	.event-content{
+
+	font-family: 'FOT-筑紫A丸ゴシック Std*';
+
+	font-size: 2.4vw;
+
+	margin: 0;
+
+	margin-top: 0.8vw;
+
+	letter-spacing: 0.008em;
+
+	color: white;
+
+	line-height: 3.733333333333334vw;
+	}
+
+
+
+	.content2{
+
+	display: flex;
+
+	flex-direction: column;
+
+	align-items: center;
+
+	width: 100vw;
+
+	height: fit-content;
+
+	background: url(/images/content2.png) 0 0;
+
+	background-size: cover;
+
+	border-left: 0.26666666666666666vw solid black;
+
+	border-right: 0.26666666666666666vw solid black;
+
+	margin-top: -21.6vw;
+
+	position: relative;
+
+	z-index: 11;
+
+	padding-bottom: 18.666666666666668vw;
+	}
+	.tamahiyofamily{
+
+	width: 47.34778666666667vw;
+
+	margin-top: 2.1333333333333333vw;
+	}
+	.event-info{
+		
+	margin: 0;
+		
+	font-family: "blairmditc-tt-medium";
+		
+	font-size: 5.333333333333334vw;
+		
+	color: #3551A2;
+		
+	letter-spacing: 0.07em;
+		
+	text-align: center;
+	}
+	.ribbon{
+		
+	width: 100vw;
+		
+	height: 17.681253333333334vw;
+		
+	background: url(/images/ribbon.png) 0 0;
+		
+	background-size: cover;
+	}
+	.ribbon-en{
+
+	text-align: center;
+
+	margin: 0;
+
+	margin-top: 5.866666666666666vw;
+
+	font-family: "blairmditc-tt-medium";
+
+	font-size: 2.666666666666667vw;
+
+	letter-spacing: 0.24em;
+
+	color: #3551A2;
+
+	font-weight: bold;
+	}
+	.ribbon-jp{
+		
+	line-height: 5.866666666666666vw;
+		
+	text-align: center;
+		
+	margin: 0;
+		
+	margin-top: 1.6vw;
+		
+	font-family: "ShinGoPro";
+		
+	font-size: 5.066666666666666vw;
+		
+	letter-spacing: 0.16em;
+		
+	color: #3551A2;
+	}
+	.content2-board{
+		
+	display: flex;
+		
+	flex-direction: column;
+		
+	align-items: center;
+		
+	width: 93.09901333333333vw;
+		
+	height: 137.68887999999998vw;
+		
+	background: url(/images/content2-board.png) 0 0;
+		
+	background-size: cover;
+		
+	margin-top: 4.634506666666667vw;
+		
+	position: relative;
+		
+	z-index: 13;
+		
+	margin-bottom: 11.200000000000001vw;
+	}
+	.pin{
+
+	width: 4.448346666666667vw;
+
+	height: 5.59752vw;
+
+	margin-top: -1.3333333333333335vw;
+	}
+	.board-event{
+
+	display: flex;
+
+	gap: 2.1333333333333333vw;
+
+	align-items: center;
+
+	margin-top: 2.666666666666667vw;
+
+	margin-bottom: 2.1333333333333333vw;
+	}
+	.board-label{
+
+	width: 15.296213333333334vw;
+
+	height: 3.867946666666666vw;
+
+	background-color: #666464;
+
+	border-radius: 1.6vw;
+
+	font-family: "UDShinGoPr6";
+
+	font-weight: 400;
+
+	font-size: 2.666666666666667vw;
+
+	line-height: 3.867946666666666vw;
+
+	text-align: center;
+
+	color: white;
+
+	margin: 0;
+	}
+	.board-date{
+		
+	width: 56.5084vw;
+		
+	height: 13.581466666666667vw;
+	}
+	.linepath{
+		
+	width: 84.25149333333334vw;
+	}
+	.weekdays-container{
+		
+	display: flex;
+		
+	height: 18.666666666666668vw;
+	}
+	.weekdays{
+		
+	width: 20.933333333333334vw;
+		
+	height: 20.933333333333334vw;
+		
+	margin-left: -4.8vw;
+		
+	margin-top: -0.8vw;
+	}
+	.weekdays-title{
+
+	font-family: "TBChibiRGoPlusKStd*";
+
+	font-style: italic;
+
+	font-size: 7.466666666666668vw;
+
+	color: #E6326E;
+
+	text-align: center;
+
+	line-height: 6.4vw;
+
+	margin: 0;
+
+	margin-left: -1.6vw;
+
+	margin-top: 2.933333333333333vw;
+	}
+	.weekdays-title span{
+
+	font-size: 4.266666666666667vw;
+
+	letter-spacing: 0.002em;
+
+	color: black;
+
+	font-style: normal;
+
+	margin-left: 2.666666666666667vw;
+	}
+	.time-info{
+
+	display: flex;
+
+	align-items: center;
+
+	width: 84.25149333333334vw;
+	}
+	.time-label{
+
+	width: 5.853466666666667vw;
+
+	height: 2.8938400000000004vw;
+
+	background-color: #656464;
+
+	font-family: "UDShinGoPr6";
+
+	font-weight: 400;
+
+	font-size: 2.1333333333333333vw;
+
+	line-height: 2.8938400000000004vw;
+
+	text-align: center;
+
+	color: white;
+
+	margin: 0;
+	}
+	.time-detail{
+
+	font-family: 'FOT-筑紫A丸ゴシック Std*';
+
+	font-size: 3.2vw;
+
+	margin: 0;
+
+	margin-left: 1.3333333333333335vw;
+
+	letter-spacing: -0.04em;
+	}
+	.time-detail span{
+
+	font-size: 2.666666666666667vw;
+	}
+	.suggestion {
+		
+	margin: 0;
+		
+	width: 84.25149333333334vw;
+		
+	font-family: 'FOT-筑紫A丸ゴシック Std*';
+		
+	font-size: 3.4666666666666663vw;
+		
+	line-height: 3.733333333333334vw;
+		
+	letter-spacing: -0.05em;
+		
+	margin-top: 1.3333333333333335vw;
+		
+	color: #E3007F;
+	}
+	.suggestion-point{
+
+	margin: 0;
+
+	font-family: "UDShinGoPr6";
+
+	font-weight: 300;
+
+	font-size: 1.866666666666667vw;
+
+	line-height: 2.666666666666667vw;
+
+	margin-top: 2.1333333333333333vw;
+
+	width: 77.05149333333334vw;
+
+	margin-bottom: 2.1333333333333333vw;
+	}
+	.hand{
+
+	width: 51.2vw;
+
+	position: absolute;
+
+	margin-top: 44.53333333333334vw;
+
+	margin-left: 45.06666666666666vw;
+	}
+	.weekend{
+			
+	width: 20.933333333333334vw;
+		
+	height: 20.933333333333334vw;
+		
+	margin-left: -4.8vw;
+		
+	margin-top: -0.8vw;
+	}
+	.weekend-container{
+		
+	display: flex;
+		
+	height: 18.666666666666668vw;
+	}
+	.weekend-title{
+		
+	width: 63.42933333333334vw;
+		
+	height: 23.811093333333332vw;
+		
+	margin-top: 2.1333333333333333vw;
+		
+	margin-left: 1.3333333333333335vw;
+	}
+	.lottery{
+		
+	width: 90.02701333333333vw;
+		
+	height: 36.039840000000005vw;
+		
+	margin-left: 6.133333333333333vw;
+		
+	margin-top: -2.666666666666667vw;
+	}
+	.content2-board-long{
+			
+	display: flex;
+			
+	flex-direction: column;
+			
+	align-items: center;
+			
+	width: 93.09901333333333vw;
+			
+	height: 225.75072vw;
+			
+	background: url(/images/content2-board-long.png) 0 0;
+			
+	background-size: cover;
+			
+	margin-top: 4.634506666666667vw;
+			
+	position: relative;
+			
+	z-index: 13;
+	}
+	.eventheld{
+
+	display: flex;
+
+	align-items: center;
+
+	justify-content: center;
+
+	gap: 2.933333333333333vw;
+
+	margin-top: 0px;
+
+	margin-left: -4vw;
+	}
+	.eventheld1{
+
+	font-family: "UDShinGoPr6";
+
+	font-weight: 400;
+
+	font-size: 2.666666666666667vw;
+
+	line-height: 3.7922933333333333vw;
+
+	width: 15.296213333333334vw;
+
+	height: 3.7922933333333333vw;
+
+	border-radius: 1.6vw;
+
+	color: white;
+
+	background-color: #666464;
+
+	text-align: center;
+
+	margin: 0;
+
+	margin-top: 2.1333333333333333vw;
+	}
+	.eventheld2{
+
+	color: #E50012;
+
+	font-family: "ShinGoPro";
+
+	font-weight: 600;
+
+	font-size: 6.666666666666667vw;
+
+	line-height: 9.6vw;
+
+	letter-spacing: 0.012em;
+
+	margin: 0;
+	}
+	.eventheldinfo{
+		
+	margin: 0;
+		
+	font-family: "UDShinGoCOnizPr6";
+		
+	font-weight: 400;
+		
+	font-size: 3.2vw;
+		
+	letter-spacing: 0.004em;
+		
+	line-height: 3.733333333333334vw;
+		
+	margin-top: 0.5333333333333333vw;
+		
+	margin-bottom: 2.1333333333333333vw;
+	}
+	.song-show{
+
+	margin-top: 2.666666666666667vw;
+	}
+	.song-show img{
+
+	width: 81.97586666666666vw;
+	}
+	.song-show1{
+
+	font-family: "FOT-筑紫A丸ゴシック Std*";
+
+	margin: 0;
+
+	font-size: 3.2vw;
+
+	letter-spacing: 0.004em;
+
+	margin-top: -16.53333333333333vw;
+
+	margin-left: 1.3333333333333335vw;
+	}
+	.song-show2{
+
+	margin: 0;
+
+	font-family: "ShinGoPro";
+
+	font-weight: 400;
+
+	font-size: 2.4vw;
+
+	color: #3969AB;
+
+	letter-spacing: 0.065em;
+
+	line-height: 3.2vw;
+
+	margin-left: 1.3333333333333335vw;
+	}
+	.song-show3{
+
+	margin: 0;
+
+	font-family: "UDShinGoPr6";
+
+	font-weight: 300;
+
+	font-size: 1.866666666666667vw;
+
+	line-height: 2.933333333333333vw;
+
+	margin-left: 1.3333333333333335vw;
+	}
+	.linepath2{
+
+	width: 82.83264vw;
+		
+	margin-top: 1.0666666666666667vw;
+	}
+	.shimajiro{
+
+	display: flex;
+
+	justify-content: center;
+
+	align-items: center;
+
+	gap: 1.0666666666666667vw;
+
+	margin-top: 1.0666666666666667vw;
+
+	margin-bottom: 2.1333333333333333vw;
+	}
+	.shimajiro1{
+
+	}
+	.shimajiro-logo{
+
+	width: 41.22781333333333vw;
+	}
+	.shimajiro-text1{
+
+	font-family: "ShinGoPro";
+
+	font-weight: 500;
+
+	font-size: 2.933333333333333vw;
+
+	line-height: 4vw;
+
+	color: #344B99;
+
+	margin: 0;
+	}
+	.shimajiro-corp{
+
+	width: 38.37453333333334vw;
+
+	margin-top: 3.2vw;
+	}
+	.shimajiro-terms{
+
+	margin: 0;
+
+	font-size: 1.866666666666667vw;
+
+	line-height: 2.1333333333333333vw;
+	}
+	.shimajiro-mascot{
+		
+	width: 41.079013333333336vw;
+	}
+	.shimajiro-event{
+
+	display: flex;
+
+	height: fit-content;
+	}
+	.linepath3{
+
+	height: 53.1844vw;
+	}
+	.shimajiro-event1{
+
+	width: 40.865066666666664vw;
+
+	height: 49.183679999999995vw;
+
+	margin-top: 2.666666666666667vw;
+
+	margin-left: 4.266666666666667vw;
+
+	margin-right: 1.3333333333333335vw;
+	}
+	.shimajiro-event2{
+
+	width: 43.73853333333333vw;
+
+	height: 52.03490666666667vw;
+
+	margin-left: 1.866666666666667vw;
+	}
+	.shimajiro-event3{
+
+	width: 47.15146666666667vw;
+
+	height: 50.343493333333335vw;
+
+	margin-left: -2.933333333333333vw;
+
+	margin-top: 2.4vw;
+	}
+	.shimajiro-event4{
+
+	width: 44.53178666666667vw;
+
+	height: 53.48565333333334vw;
+
+	margin-left: -1.3333333333333335vw;
+
+	margin-top: 2.666666666666667vw;
+	}
+	.ribbon2{
+		
+	font-family: "TBChibiRGoPlusKStd*";
+		
+	font-size: 4.533333333333333vw;
+		
+	letter-spacing: 0.15em;
+		
+	font-style: italic;
+		
+	color: white;
+		
+	background: url(/images/ribbon2.png) 0 0;
+		
+	width: 90.05503999999999vw;
+		
+	height: 7.203413333333334vw;
+		
+	line-height: 6.136746666666666vw;
+		
+	background-size: cover;
+		
+	text-align: center;
+		
+	margin: 0;
+		
+	margin-top: 5.333333333333334vw;
+	}
+	.october{
+
+	width: 86.62309333333333vw;
+
+	margin-top: 4vw;
+
+	margin-bottom: 1.3333333333333335vw;
+	}
+	.november{
+		width: 86.62309333333333vw;
+		margin-top: 4vw;
+		margin-bottom: 1.3333333333333335vw;
+	}
+	.date-event1{
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	color: white;
+
+	font-size: 3.2vw;
+
+	margin: 0;
+
+	width: 84vw;
+
+	line-height: 4.1031466666666665vw;
+
+	margin-top: 1.3333333333333335vw;
+	}
+	.date-event1 span{
+
+	background-color: #E50012;
+
+	clip-path: polygon(0% 0%, 85% 0, 100% 50%, 85% 99%, 0% 100%);
+
+	width: 11.657733333333335vw;
+
+	height: 4.369813333333333vw;
+
+	display: inline-block;
+
+	padding-left: 1.3333333333333335vw;
+
+	margin-right: 1.3333333333333335vw;
+	}
+	.date-event2{
+		font-family: "UDShinGoCOnizPr6";
+		font-weight: 600;
+		color: white;
+		font-size: 3.2vw;
+		margin: 0;
+		width: 84vw;
+		line-height: 4.1031466666666665vw;
+		margin-top: 1.3333333333333335vw;
+		letter-spacing: 0.03em;}
+	.date-event2 span{
+		
+	background-color: #004098;
+		
+	clip-path: polygon(0% 0%, 85% 0, 100% 50%, 85% 99%, 0% 100%);
+		
+	width: 11.657733333333335vw;
+		
+	height: 4.369813333333333vw;
+		
+	display: inline-block;
+		
+	padding-left: 1.3333333333333335vw;
+		
+	margin-right: 1.3333333333333335vw;
+	}
+
+
+
+	.content3{
+		
+	display: flex;
+		
+	flex-direction: column;
+		
+	align-items: center;
+		
+	width: 100vw;
+		
+	height: fit-content;
+		
+	background: url(/images/content3.png) 0 0;
+		
+	background-size: cover;
+		
+	border-left: 0.26666666666666666vw solid black;
+		
+	border-right: 0.26666666666666666vw solid black;
+		
+	margin-top: -13.066666666666665vw;
+		
+	position: relative;
+		
+	z-index: 12;
+		
+	padding-top: 14.133333333333335vw;
+	}
+	.aichi{
+
+	margin: 0;
+
+	width: 28.49864vw;
+
+	height: 5.125866666666667vw;
+
+	line-height: 5.125866666666667vw;
+
+	border-radius: 2.5599999999999996vw;
+
+	background-color: #F8B500;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 4.266666666666667vw;
+
+	color: white;
+
+	text-align: center;
+
+	letter-spacing: 0.24em;
+
+	font-style: italic;
+
+	margin-top: 4vw;
+	}
+	.aichi-list{
+
+	gap: 2.666666666666667vw;
+
+	display: flex;
+
+	align-items: center;
+
+	margin-top: 2.666666666666667vw;
+
+	flex-wrap: wrap;
+	}
+	.aichi-each{display: flex;flex-direction: column;align-items: center;}
+	.aichi-button{
+
+	width: 41.6vw;
+
+	height: 5.333333333333334vw;
+
+	display: inline-block;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 4.266666666666667vw;
+
+	display: flex;
+
+	background-color: #F8B500;
+
+	border-radius: 2.666666666666667vw;
+
+	text-decoration: none;
+
+	color: white;
+
+	font-style: italic;
+
+	justify-content: center;
+
+	letter-spacing: 0.1em;
+
+	align-items: center;
+	}
+	.aichi-button1{
+
+	font-weight: 400;
+
+	font-size: 1.866666666666667vw;
+
+	width: 9.866666666666667vw;
+
+	display: inline-block;
+
+	line-height: 1.866666666666667vw;
+
+	letter-spacing: 0.24em;
+
+	width: 10.666666666666668vw;
+
+	margin-left: 0.8vw;
+
+	margin-top: 0.5333333333333333vw;
+	}
+	.aichi-svg{
+		
+	width: 2.933333333333333vw;
+		
+	height: 2.933333333333333vw;
+		
+	margin-left: 35.733333333333334vw;
+		
+	position: absolute;
+	}
+	.each-image{
+
+	width: 41.6vw;
+
+	margin-top: 1.3333333333333335vw;
+	}
+	.each-address{
+
+	font-family: "ShinGoPro";
+
+	font-weight: 400;
+
+	margin: 0;
+
+	font-size: 1.6vw;
+
+	letter-spacing: 0.04em;
+	}
+	.each-phone{
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	margin: 0;
+
+	font-size: 4.266666666666667vw;
+
+	text-decoration: none;
+
+	color: black;
+
+	width: 41.6vw;
+
+	border-top: 0.26666666666666666vw solid black;
+
+	text-align: center;
+
+	line-height: 4.533333333333333vw;
+
+	letter-spacing: 0.006em;
+	}
+	.each-phone span{
+
+	font-size: 3.2vw;
+	}
+	.linepath4{
+		
+	height: 34.51949333333334vw;
+	}
+
+
+	.mie{
+
+	margin: 0;
+
+	width: 28.49864vw;
+
+	height: 5.125866666666667vw;
+
+	line-height: 5.125866666666667vw;
+
+	border-radius: 2.5599999999999996vw;
+
+	background-color: #45B035;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 4.266666666666667vw;
+
+	color: white;
+
+	text-align: center;
+
+	letter-spacing: 0.24em;
+
+	font-style: italic;
+
+	margin-top: 4vw;
+
+	margin-bottom: 1.866666666666667vw;
+	}
+	.mie-list{
+
+	gap: 2.666666666666667vw;
+
+	display: flex;
+
+	margin-top: 0.5333333333333333vw;
+
+	flex-wrap: wrap;
+
+	align-items: center;
+
+	width: 89.328vw;
+	}
+	.mie-each{display: flex;flex-direction: column;align-items: center;}
+	.mie-button{
+
+	width: 41.6vw;
+
+	height: 5.333333333333334vw;
+
+	display: inline-block;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 4.266666666666667vw;
+
+	display: flex;
+
+	background-color: #45B035;
+
+	border-radius: 2.666666666666667vw;
+
+	text-decoration: none;
+
+	color: white;
+
+	font-style: italic;
+
+	justify-content: center;
+
+	letter-spacing: 0.1em;
+
+	align-items: center;
+	}
+	.mie-button1{
+
+	font-weight: 400;
+
+	font-size: 1.866666666666667vw;
+
+	width: 9.866666666666667vw;
+
+	display: inline-block;
+
+	line-height: 1.866666666666667vw;
+
+	letter-spacing: 0.24em;
+
+	width: 10.666666666666668vw;
+
+	margin-left: 0.8vw;
+
+	margin-top: 0.5333333333333333vw;
+	}
+	.mie-svg{
+		
+	width: 2.933333333333333vw;
+		
+	height: 2.933333333333333vw;
+		
+	margin-left: 35.733333333333334vw;
+		
+	position: absolute;
+	}
+	.linepath5{
+
+	width: 92.50704vw;
+
+	margin-top: 0.5333333333333333vw;
+	}
+	.linepath6{
+
+	height: 34.51949333333334vw;
+	}
+
+	.gifu-shizuoka{
+		
+	display: flex;
+		
+	justify-content: center;
+		
+	gap: 16vw;
+	}
+	.gifu{
+
+	margin: 0;
+
+	width: 28.49864vw;
+
+	height: 5.125866666666667vw;
+
+	line-height: 5.125866666666667vw;
+
+	border-radius: 2.5599999999999996vw;
+
+	background-color: #006CB8;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 4.266666666666667vw;
+
+	color: white;
+
+	text-align: center;
+
+	letter-spacing: 0.24em;
+
+	font-style: italic;
+
+	margin-top: 4vw;
+
+	margin-bottom: 1.866666666666667vw;
+	}
+	.shizuoka{
+
+	margin: 0;
+
+	width: 28.49864vw;
+
+	height: 5.125866666666667vw;
+
+	line-height: 5.125866666666667vw;
+
+	border-radius: 2.5599999999999996vw;
+
+	background-color: #B963A4;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 4.266666666666667vw;
+
+	color: white;
+
+	text-align: center;
+
+	letter-spacing: 0.24em;
+
+	font-style: italic;
+
+	margin-top: 4vw;
+
+	margin-bottom: 1.866666666666667vw;
+	}
+
+	.gifu-shizuoka-list{
+
+	gap: 2.666666666666667vw;
+
+	display: flex;
+
+	margin-top: 0.5333333333333333vw;
+
+	flex-wrap: wrap;
+
+	width: 89.328vw;
+
+	align-items: center;
+
+	padding-bottom: 8vw;
+	}
+	.gifu-each{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.gifu-button{
+
+	width: 41.6vw;
+
+	height: 5.333333333333334vw;
+
+	display: inline-block;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 2.1333333333333333vw;
+
+	display: flex;
+
+	background-color: #006CB8;
+
+	border-radius: 2.666666666666667vw;
+
+	text-decoration: none;
+
+	color: white;
+
+	font-style: italic;
+
+	justify-content: center;
+
+	letter-spacing: 0.1em;
+
+	align-items: center;
+	}
+	.gifu-button1{
+
+	margin-right: 4vw;
+
+	margin-top: 0.5333333333333333vw;
+	}
+	.gifu-svg{
+		
+	width: 2.933333333333333vw;
+		
+	height: 2.933333333333333vw;
+		
+	margin-left: 35.733333333333334vw;
+		
+	position: absolute;
+	}
+
+	.shizuoka-each{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.shizuoka-button{
+
+	width: 41.6vw;
+
+	height: 5.333333333333334vw;
+
+	display: inline-block;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-weight: 600;
+
+	font-size: 4.266666666666667vw;
+
+	display: flex;
+
+	background-color: #B963A4;
+
+	border-radius: 2.666666666666667vw;
+
+	text-decoration: none;
+
+	color: white;
+
+	font-style: italic;
+
+	justify-content: center;
+
+	letter-spacing: 0.1em;
+
+	align-items: center;
+	}
+	.shizuoka-button1{
+
+	font-weight: 400;
+
+	font-size: 1.866666666666667vw;
+
+	width: 9.866666666666667vw;
+
+	display: inline-block;
+
+	line-height: 1.866666666666667vw;
+
+	letter-spacing: 0.24em;
+
+	width: 10.666666666666668vw;
+
+	margin-left: 0.8vw;
+
+	margin-top: 0.5333333333333333vw;
+	}
+	.shizuoka-svg{
+		
+	width: 2.933333333333333vw;
+		
+	height: 2.933333333333333vw;
+		
+	margin-left: 36vw;
+		
+	position: absolute;
+	}
+	.linepath7{
+		
+	height: 34.51949333333334vw;
+	}
+
+
+	footer{
+
+	height: 11.013919999999999vw;
+
+	width: 100%;
+
+	background-color: white;
+
+	margin: 0 auto;
+	}
+	.footer-container{
+		
+	display: flex;
+		
+	width: 100vw;
+		
+	height: 11.013919999999999vw;
+		
+	border-left: 0.26666666666666666vw solid black;
+		
+	border-right: 0.26666666666666666vw solid black;
+		
+	margin: 0 auto;
+		
+	gap: 0;
+		
+	flex-direction: column;
+		
+	justify-content: center;
+		
+	align-items: center;
+	}
+	.footer-company{
+
+	margin: 0;
+
+	text-align: center;
+
+	font-family: 'Gothic A1', sans-serif;
+
+	font-size: 1.866666666666667vw;
+
+	letter-spacing: 0.04em;
+
+	margin-top: 1.3333333333333335vw;
+	}
+	.footer-copyright{
+
+	margin: 0;
+
+	text-align: center;
+
+	font-family: 'Gothic A1', sans-serif;
+
+	font-size: 1.866666666666667vw;
+
+	letter-spacing: 0.04em;
+
+	width: 95.71194666666668vw;
+
+	border-top: 0.26666666666666666vw solid black;
+
+	margin-top: 0.5333333333333333vw;
+
+	line-height: 4vw;
+	}
+}
