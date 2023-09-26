@@ -54,7 +54,9 @@
     src: url("/usedfont/34831.ttf") format("truetype");
 }
 
-
+* {
+	scroll-behavior: smooth;
+}
 body{
     margin: 0;
     padding: 0;
@@ -104,13 +106,173 @@ display: none;
 	}
 	.header-mid{
 		
-height: 41.8535px;
+	height: 41.8535px;
+			
+	width: 0;
+			
+	border-right: 1px solid black;
+			
+	display: none;
+	}
+	.nav{
+
+display: flex;
+
+width: 100%;
+
+height: 36.093px;
+
+position: fixed;
+
+justify-content: center;
+
+z-index: 20;
+
+}
+	.nav-container{
 		
-width: 0;
+display: flex;
 		
-border-right: 1px solid black;
+width: 375px;
 		
-display: none;
+height: 36.093px;
+		
+position: fixed;
+		
+justify-content: center;
+		
+background-color: #F7931E;
+		
+opacity: 0.9;
+		
+bottom: 0;
+		
+align-items: center;
+	}
+	.nav1{
+
+width: 120px;
+
+height: 27.6753px;
+
+display: flex;
+
+align-items: center;
+
+gap: 5px;
+
+justify-content: center;
+
+border-left: 1px solid white;
+
+border-right: 1px solid white;
+
+}
+	.nav1 a{
+		
+text-align: center;
+		
+text-decoration: none;
+		
+color: white;
+		
+font-family: "UDShinGoCOnizPr6";
+		
+font-weight: 600;
+		
+font-size: 13px;
+		
+line-height: 14px;
+		
+letter-spacing: 0.16em;
+	}
+	.nav1 svg{
+		
+width: 14.7956px;
+		
+height: 14.7956px;
+	}
+	.nav2{
+
+width: 120px;
+
+height: 27.6753px;
+
+display: flex;
+
+align-items: center;
+
+gap: 5px;
+
+justify-content: center;
+
+}
+	.nav2 a{
+		
+text-align: center;
+		
+text-decoration: none;
+		
+color: white;
+		
+font-family: "UDShinGoCOnizPr6";
+		
+font-weight: 600;
+		
+font-size: 13px;
+		
+line-height: 14px;
+		
+letter-spacing: 0.16em;
+	}
+	.nav2 svg{
+		
+width: 14.7956px;
+		
+height: 14.7956px;
+	}
+	.nav3{
+
+width: 120px;
+
+height: 27.6753px;
+
+display: flex;
+
+align-items: center;
+
+gap: 5px;
+
+justify-content: center;
+
+border-left: 1px solid white;
+
+border-right: 1px solid white;
+
+}
+	.nav3 a{
+		
+text-align: center;
+		
+text-decoration: none;
+		
+color: white;
+		
+font-family: "UDShinGoCOnizPr6";
+		
+font-weight: 600;
+		
+font-size: 13px;
+		
+line-height: 14px;
+		
+letter-spacing: 0.16em;
+	}
+	.nav3 svg{
+		
+width: 14.7956px;
+		
+height: 14.7956px;
 	}
 	.container{
 
