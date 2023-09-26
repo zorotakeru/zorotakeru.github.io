@@ -56,6 +56,7 @@
 
 * {
 	scroll-behavior: smooth;
+	overflow-x: clip;
 }
 body{
     margin: 0;
@@ -91,13 +92,13 @@ body{
 	}
 	.header-logo1{
 
-width: 141.6753px;
+	width: 141.6753px;
 
-height: 39.9645px;
+	height: 39.9645px;
 
-display: none;
+	display: none;
 
-}
+	}
 	.header-logo2{
 
 	width: 134.0595px;
@@ -116,163 +117,163 @@ display: none;
 	}
 	.nav{
 
-display: flex;
+	display: flex;
 
-width: 100%;
+	width: 100%;
 
-height: 36.093px;
+	height: 36.093px;
 
-position: fixed;
+	position: fixed;
 
-justify-content: center;
+	justify-content: center;
 
-z-index: 20;
+	z-index: 20;
 
-}
+	}
 	.nav-container{
 		
-display: flex;
-		
-width: 375px;
-		
-height: 36.093px;
-		
-position: fixed;
-		
-justify-content: center;
-		
-background-color: #F7931E;
-		
-opacity: 0.9;
-		
-bottom: 0;
-		
-align-items: center;
+	display: flex;
+			
+	width: 375px;
+			
+	height: 36.093px;
+			
+	position: fixed;
+			
+	justify-content: center;
+			
+	background-color: #F7931E;
+			
+	opacity: 0.9;
+			
+	bottom: 0;
+			
+	align-items: center;
 	}
 	.nav1{
 
-width: 120px;
+	width: 120px;
 
-height: 27.6753px;
+	height: 27.6753px;
 
-display: flex;
+	display: flex;
 
-align-items: center;
+	align-items: center;
 
-gap: 5px;
+	gap: 5px;
 
-justify-content: center;
+	justify-content: center;
 
-border-left: 1px solid white;
+	border-left: 1px solid white;
 
-border-right: 1px solid white;
+	border-right: 1px solid white;
 
-}
+	}
 	.nav1 a{
 		
-text-align: center;
-		
-text-decoration: none;
-		
-color: white;
-		
-font-family: "UDShinGoCOnizPr6";
-		
-font-weight: 600;
-		
-font-size: 13px;
-		
-line-height: 14px;
-		
-letter-spacing: 0.16em;
+	text-align: center;
+			
+	text-decoration: none;
+			
+	color: white;
+			
+	font-family: "UDShinGoCOnizPr6";
+			
+	font-weight: 600;
+			
+	font-size: 13px;
+			
+	line-height: 14px;
+			
+	letter-spacing: 0.16em;
 	}
 	.nav1 svg{
 		
-width: 14.7956px;
-		
-height: 14.7956px;
+	width: 14.7956px;
+			
+	height: 14.7956px;
 	}
 	.nav2{
 
-width: 120px;
+	width: 120px;
 
-height: 27.6753px;
+	height: 27.6753px;
 
-display: flex;
+	display: flex;
 
-align-items: center;
+	align-items: center;
 
-gap: 5px;
+	gap: 5px;
 
-justify-content: center;
+	justify-content: center;
 
-}
+	}
 	.nav2 a{
 		
-text-align: center;
-		
-text-decoration: none;
-		
-color: white;
-		
-font-family: "UDShinGoCOnizPr6";
-		
-font-weight: 600;
-		
-font-size: 13px;
-		
-line-height: 14px;
-		
-letter-spacing: 0.16em;
+	text-align: center;
+			
+	text-decoration: none;
+			
+	color: white;
+			
+	font-family: "UDShinGoCOnizPr6";
+			
+	font-weight: 600;
+			
+	font-size: 13px;
+			
+	line-height: 14px;
+			
+	letter-spacing: 0.16em;
 	}
 	.nav2 svg{
 		
-width: 14.7956px;
-		
-height: 14.7956px;
+	width: 14.7956px;
+			
+	height: 14.7956px;
 	}
 	.nav3{
 
-width: 120px;
+	width: 120px;
 
-height: 27.6753px;
+	height: 27.6753px;
 
-display: flex;
+	display: flex;
 
-align-items: center;
+	align-items: center;
 
-gap: 5px;
+	gap: 5px;
 
-justify-content: center;
+	justify-content: center;
 
-border-left: 1px solid white;
+	border-left: 1px solid white;
 
-border-right: 1px solid white;
+	border-right: 1px solid white;
 
-}
+	}
 	.nav3 a{
 		
-text-align: center;
-		
-text-decoration: none;
-		
-color: white;
-		
-font-family: "UDShinGoCOnizPr6";
-		
-font-weight: 600;
-		
-font-size: 13px;
-		
-line-height: 14px;
-		
-letter-spacing: 0.16em;
+	text-align: center;
+			
+	text-decoration: none;
+			
+	color: white;
+			
+	font-family: "UDShinGoCOnizPr6";
+			
+	font-weight: 600;
+			
+	font-size: 13px;
+			
+	line-height: 14px;
+			
+	letter-spacing: 0.16em;
 	}
 	.nav3 svg{
 		
-width: 14.7956px;
-		
-height: 14.7956px;
+	width: 14.7956px;
+			
+	height: 14.7956px;
 	}
 	.container{
 
@@ -2012,13 +2013,173 @@ display: none;
 	}
 	.header-mid{
 		
-height: 11.160933333333332vw;
+	height: 11.160933333333332vw;
+			
+	width: 0;
+			
+	border-right: 0.26666666666666666vw solid black;
+			
+	display: none;
+	}
+	.nav{
+
+	display: flex;
+
+	width: 100%;
+
+	height: 9.624800000000002vw;
+
+	position: fixed;
+
+	justify-content: center;
+
+	z-index: 20;
+
+	}
+	.nav-container{
 		
-width: 0;
+	display: flex;
+			
+	width: 100vw;
+			
+	height: 9.624800000000002vw;
+			
+	position: fixed;
+			
+	justify-content: center;
+			
+	background-color: #F7931E;
+			
+	opacity: 0.9;
+			
+	bottom: 0;
+			
+	align-items: center;
+	}
+	.nav1{
+
+	width: 32vw;
+
+	height: 7.3800799999999995vw;
+
+	display: flex;
+
+	align-items: center;
+
+	gap: 1.3333333333333335vw;
+
+	justify-content: center;
+
+	border-left: 0.26666666666666666vw solid white;
+
+	border-right: 0.26666666666666666vw solid white;
+
+	}
+	.nav1 a{
 		
-border-right: 0.26666666666666666vw solid black;
+	text-align: center;
+			
+	text-decoration: none;
+			
+	color: white;
+			
+	font-family: "UDShinGoCOnizPr6";
+			
+	font-weight: 600;
+			
+	font-size: 3.4666666666666663vw;
+			
+	line-height: 3.733333333333334vw;
+			
+	letter-spacing: 0.16em;
+	}
+	.nav1 svg{
 		
-display: none;
+	width: 3.9454933333333333vw;
+			
+	height: 3.9454933333333333vw;
+	}
+	.nav2{
+
+	width: 32vw;
+
+	height: 7.3800799999999995vw;
+
+	display: flex;
+
+	align-items: center;
+
+	gap: 1.3333333333333335vw;
+
+	justify-content: center;
+
+	}
+	.nav2 a{
+		
+	text-align: center;
+			
+	text-decoration: none;
+			
+	color: white;
+			
+	font-family: "UDShinGoCOnizPr6";
+			
+	font-weight: 600;
+			
+	font-size: 3.4666666666666663vw;
+			
+	line-height: 3.733333333333334vw;
+			
+	letter-spacing: 0.16em;
+	}
+	.nav2 svg{
+		
+	width: 3.9454933333333333vw;
+			
+	height: 3.9454933333333333vw;
+	}
+	.nav3{
+
+	width: 32vw;
+
+	height: 7.3800799999999995vw;
+
+	display: flex;
+
+	align-items: center;
+
+	gap: 1.3333333333333335vw;
+
+	justify-content: center;
+
+	border-left: 0.26666666666666666vw solid white;
+
+	border-right: 0.26666666666666666vw solid white;
+
+	}
+	.nav3 a{
+		
+	text-align: center;
+			
+	text-decoration: none;
+			
+	color: white;
+			
+	font-family: "UDShinGoCOnizPr6";
+			
+	font-weight: 600;
+			
+	font-size: 3.4666666666666663vw;
+			
+	line-height: 3.733333333333334vw;
+			
+	letter-spacing: 0.16em;
+	}
+	.nav3 svg{
+		
+	width: 3.9454933333333333vw;
+			
+	height: 3.9454933333333333vw;
 	}
 	.container{
 
@@ -2036,28 +2197,25 @@ display: none;
 	}
 	.content1{
 
-	display: flex;
+display: flex;
 
-	flex-direction: column;
+flex-direction: column;
 
-	align-items: center;
+align-items: center;
 
-	width: 100vw;
+width: 100vw;
 
-	height: 219.74330666666665vw;
+height: 219.74330666666665vw;
 
-	background: url(/images/content1.png) 0 0;
+background: url(/images/content1.png) 0 0;
 
-	background-size: cover;
+background-size: cover;
 
-	border-left: 0.26666666666666666vw solid black;
+position: relative;
 
-	border-right: 0.26666666666666666vw solid black;
+z-index: 10;
 
-	position: relative;
-
-	z-index: 10;
-	}
+}
 	.content1-banner{
 		
 	width: 100vw;
@@ -2247,32 +2405,29 @@ height: 7.985146666666666vw;
 
 	.content2{
 
-	display: flex;
+display: flex;
 
-	flex-direction: column;
+flex-direction: column;
 
-	align-items: center;
+align-items: center;
 
-	width: 100vw;
+width: 100vw;
 
-	height: fit-content;
+height: fit-content;
 
-	background: url(/images/content2.png) 0 0;
+background: url(/images/content2.png) 0 0;
 
-	background-size: cover;
+background-size: cover;
 
-	border-left: 0.26666666666666666vw solid black;
+margin-top: -21.6vw;
 
-	border-right: 0.26666666666666666vw solid black;
+position: relative;
 
-	margin-top: -21.6vw;
+z-index: 11;
 
-	position: relative;
+padding-bottom: 18.666666666666668vw;
 
-	z-index: 11;
-
-	padding-bottom: 18.666666666666668vw;
-	}
+}
 	.tamahiyofamily{
 
 	width: 47.34778666666667vw;
@@ -2978,31 +3133,27 @@ height: 7.985146666666666vw;
 
 	.content3{
 		
-	display: flex;
+display: flex;
 		
-	flex-direction: column;
+flex-direction: column;
 		
-	align-items: center;
+align-items: center;
 		
-	width: 100vw;
+width: 100vw;
 		
-	height: fit-content;
+height: fit-content;
 		
-	background: url(/images/content3.png) 0 0;
+background: url(/images/content3.png) 0 0;
 		
-	background-size: cover;
+background-size: cover;
 		
-	border-left: 0.26666666666666666vw solid black;
+margin-top: -13.066666666666665vw;
 		
-	border-right: 0.26666666666666666vw solid black;
+position: relative;
 		
-	margin-top: -13.066666666666665vw;
+z-index: 12;
 		
-	position: relative;
-		
-	z-index: 12;
-		
-	padding-top: 14.133333333333335vw;
+padding-top: 14.133333333333335vw;
 	}
 	.aichi{
 
