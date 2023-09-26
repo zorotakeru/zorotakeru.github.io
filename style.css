@@ -3,55 +3,55 @@
 
 @font-face {
 	font-family: "UDShinGoPr6";
-	src: url("/usedfont/A-OTF-UDShinGoPr6-Regular.otf") format("opentype"); 
+	src: url("../LP/usedfont/A-OTF-UDShinGoPr6-Regular.otf") format("opentype"); 
 	font-weight: 400;
 }
 @font-face {
 	font-family: "UDShinGoPr6";
-	src: url("/usedfont/A-OTF-UDShinGoPr6-Light.otf") format("opentype"); 
+	src: url("../LP/usedfont/A-OTF-UDShinGoPr6-Light.otf") format("opentype"); 
 	font-weight: 300;
 }
 
 @font-face {
 	font-family: "ShinGoPro";
-	src: url("/usedfont/A-OTF-ShinGoPro-DeBold.otf") format("opentype"); 
+	src: url("../LP/usedfont/A-OTF-ShinGoPro-DeBold.otf") format("opentype"); 
 	font-weight: 600;
 }
 @font-face {
 	font-family: "ShinGoPro";
-	src: url("/usedfont/A-OTF-ShinGoPro-Medium.otf") format("opentype"); 
+	src: url("../LP/usedfont/A-OTF-ShinGoPro-Medium.otf") format("opentype"); 
 	font-weight: 500;
 }
 @font-face {
 	font-family: "ShinGoPro";
-	src: url("/usedfont/A-OTF-ShinGoPro-Regular.otf") format("opentype"); 
+	src: url("../LP/usedfont/A-OTF-ShinGoPro-Regular.otf") format("opentype"); 
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: "UDShinGoCOnizPr6";
-	src: url("/usedfont/A-OTF-UDShinGoCOnizPr6-DeB.otf") format("opentype"); 
+	src: url("../LP/usedfont/A-OTF-UDShinGoCOnizPr6-DeB.otf") format("opentype"); 
 	font-weight: 600;
 }
 @font-face {
 	font-family: "UDShinGoCOnizPr6";
-	src: url("/usedfont/A-OTF-UDShinGoCOnizPr6-Reg.otf") format("opentype"); 
+	src: url("../LP/usedfont/A-OTF-UDShinGoCOnizPr6-Reg.otf") format("opentype"); 
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: "blairmditc-tt-medium";
-	src: url("/usedfont/Blaimim.ttf") format("opentype"); 
+	src: url("../LP/usedfont/Blaimim.ttf") format("opentype"); 
 }
 
 @font-face {
     font-family: "FOT-筑紫A丸ゴシック Std*";
-    src: url("/usedfont/筑紫A丸ゴシック.ttf") format("truetype");
+    src: url("../LP/usedfont/筑紫A丸ゴシック.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "TBChibiRGoPlusKStd*";
-    src: url("/usedfont/34831.ttf") format("truetype");
+    src: url("../LP/usedfont/34831.ttf") format("truetype");
 }
 
 
@@ -89,10 +89,13 @@ body{
 	}
 	.header-logo1{
 
-	width: 141.6753px;
+width: 141.6753px;
 
-	height: 39.9645px;
-	}
+height: 39.9645px;
+
+display: none;
+
+}
 	.header-logo2{
 
 	width: 134.0595px;
@@ -101,11 +104,13 @@ body{
 	}
 	.header-mid{
 		
-	height: 41.8535px;
+height: 41.8535px;
 		
-	width: 0;
+width: 0;
 		
-	border-right: 1px solid black;
+border-right: 1px solid black;
+		
+display: none;
 	}
 	.container{
 
@@ -133,7 +138,7 @@ body{
 
 	height: 824.0374px;
 
-	background: url(/images/content1.png) 0 0;
+	background: url(../LP/images/content1.png) 0 0;
 
 	background-size: cover;
 
@@ -251,7 +256,7 @@ body{
 
 	height: 188.5532px;
 
-	background: url(/images/event-container.png) 0 0;
+	background: url(../LP/images/event-container.png) 0 0;
 
 	background-size: contain;
 
@@ -343,7 +348,7 @@ body{
 
 	height: fit-content;
 
-	background: url(/images/content2.png) 0 0;
+	background: url(../LP/images/content2.png) 0 0;
 
 	background-size: cover;
 
@@ -364,20 +369,35 @@ body{
 	width: 177.5542px;
 
 	margin-top: 8px;
+
+	display: none;
+
 	}
 	.event-info{
 		
 	margin: 0;
-		
+			
 	font-family: "blairmditc-tt-medium";
-		
+			
 	font-size: 20px;
-		
+			
 	color: #3551A2;
-		
-	letter-spacing: 0.07em;
-		
+			
+	letter-spacing: 0.1em;
+			
 	text-align: center;
+			
+	margin-top: 45px;
+	}
+	.event-info span{
+		
+	position: absolute;
+			
+	left: 0px;
+			
+	margin-top: -35px;
+			
+	letter-spacing: -0.2em;
 	}
 	.ribbon{
 		
@@ -385,7 +405,7 @@ body{
 		
 	height: 66.3047px;
 		
-	background: url(/images/ribbon.png) 0 0;
+	background: url(../LP/images/ribbon.png) 0 0;
 		
 	background-size: cover;
 	}
@@ -437,7 +457,7 @@ body{
 		
 	height: 516.3333px;
 		
-	background: url(/images/content2-board.png) 0 0;
+	background: url(../LP/images/content2-board.png) 0 0;
 		
 	background-size: cover;
 		
@@ -691,7 +711,7 @@ body{
 			
 	height: 846.5652px;
 			
-	background: url(/images/content2-board-long.png) 0 0;
+	background: url(../LP/images/content2-board-long.png) 0 0;
 			
 	background-size: cover;
 			
@@ -875,6 +895,9 @@ body{
 	width: 143.9045px;
 
 	margin-top: 12px;
+
+	display: none;
+
 	}
 	.shimajiro-terms{
 
@@ -883,6 +906,9 @@ body{
 	font-size: 7px;
 
 	line-height: 8px;
+
+	margin-top: 19px;
+
 	}
 	.shimajiro-mascot{
 		
@@ -950,7 +976,7 @@ body{
 		
 	color: white;
 		
-	background: url(/images/ribbon2.png) 0 0;
+	background: url(../LP/images/ribbon2.png) 0 0;
 		
 	width: 337.7064px;
 		
@@ -1041,7 +1067,7 @@ body{
 		
 	height: fit-content;
 		
-	background: url(/images/content3.png) 0 0;
+	background: url(../LP/images/content3.png) 0 0;
 		
 	background-size: cover;
 		
@@ -1541,38 +1567,205 @@ body{
 	height: 129.4481px;
 	}
 
+	.inquiry{
+
+	width: 310px;
+
+	height: 84px;
+
+	background-color: white;
+
+	border: 1px solid black;
+
+	display: flex;
+
+	flex-direction: column;
+
+	align-items: center;
+
+	margin-bottom: 30px;
+
+	}
+	.inquiry-title{
+
+	margin: 0;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-size: 12px;
+
+	line-height: 12px;
+
+	letter-spacing: 0.06em;
+
+	font-weight: 600;
+
+	margin-top: 10px;
+
+	}
+	.inquiry-container{
+
+	display: flex;
+
+	margin-top: 10px;
+
+	justify-content: center;
+
+	gap: 5px;
+
+	}
+	.inquiry-label{
+
+	display: flex;
+
+	flex-direction: column;
+
+	gap: 10px;
+
+	}
+	.inquiry-label1{
+
+	margin: 0;
+
+	width: 49.7179px;
+
+	height: 9.4061px;
+
+	line-height: 9.4061px;
+
+	background-color: #727171;
+
+	font-family: "ShinGoPro";
+
+	font-weight: 400;
+
+	font-size: 7px;
+
+	text-align: center;
+
+	color: white;
+
+	}
+	.inquiry-label2{
+
+	margin: 0;
+
+	width: 49.7179px;
+
+	height: 9.4061px;
+
+	line-height: 9.4061px;
+
+	background-color: #727171;
+
+	font-family: "ShinGoPro";
+
+	font-weight: 400;
+
+	font-size: 7px;
+
+	text-align: center;
+
+	color: white;
+
+	}
+	.inquiry-desc{
+
+	display: flex;
+
+	flex-direction: column;
+
+	gap: 10px;
+
+	}
+	.inquiry-desc1{
+
+	margin: 0;
+
+	font-family: "ShinGoPro";
+
+	font-weight: 400;
+
+	font-size: 10px;
+
+	line-height: 8px;
+
+	letter-spacing: -0.03em;
+
+	}
+	.inquiry-desc2{
+		
+	margin: 0;
+			
+	font-family: "ShinGoPro";
+			
+	font-weight: 400;
+			
+	font-size: 10px;
+			
+	line-height: 12px;
+	}
+
 
 	footer{
 
-	height: 41.3022px;
+	height: 105px;
 
 	width: 100%;
 
 	background-color: white;
 
 	margin: 0 auto;
+
 	}
 	.footer-container{
 		
 	display: flex;
-		
+			
 	width: 375px;
-		
-	height: 41.3022px;
-		
+			
+	height: 105px;
+			
 	border-left: 1px solid black;
-		
+			
 	border-right: 1px solid black;
-		
+			
 	margin: 0 auto;
-		
+			
 	gap: 0;
-		
+			
 	flex-direction: column;
-		
-	justify-content: center;
-		
+			
 	align-items: center;
+	}
+	.event-corp{
+		
+	display: flex;
+			
+	align-items: center;
+			
+	gap: 5px;
+			
+	margin-top: 20px;
+	}
+	.event-corp1{
+
+	margin: 0;
+
+	font-family: "ShinGoPro";
+
+	font-weight: 400;
+
+	font-size: 9px;
+
+	letter-spacing: 0.04em;
+
+	}
+	.event-corp2{
+		
+	width: 148.9654px;
+			
+	height: 42.0209px;
 	}
 	.footer-company{
 
@@ -1586,7 +1779,8 @@ body{
 
 	letter-spacing: 0.04em;
 
-	margin-top: 5px;
+	margin-top: 15px;
+
 	}
 	.footer-copyright{
 
@@ -1641,10 +1835,13 @@ body{
 	}
 	.header-logo1{
 
-	width: 37.78008vw;
+width: 37.78008vw;
 
-	height: 10.6572vw;
-	}
+height: 10.6572vw;
+
+display: none;
+
+}
 	.header-logo2{
 
 	width: 35.7492vw;
@@ -1653,11 +1850,13 @@ body{
 	}
 	.header-mid{
 		
-	height: 11.160933333333332vw;
+height: 11.160933333333332vw;
 		
-	width: 0;
+width: 0;
 		
-	border-right: 0.26666666666666666vw solid black;
+border-right: 0.26666666666666666vw solid black;
+		
+display: none;
 	}
 	.container{
 
@@ -1685,7 +1884,7 @@ body{
 
 	height: 219.74330666666665vw;
 
-	background: url(/images/content1.png) 0 0;
+	background: url(../LP/images/content1.png) 0 0;
 
 	background-size: cover;
 
@@ -1804,7 +2003,7 @@ height: 7.985146666666666vw;
 
 	height: 50.28085333333333vw;
 
-	background: url(/images/event-container.png) 0 0;
+	background: url(../LP/images/event-container.png) 0 0;
 
 	background-size: contain;
 
@@ -1896,7 +2095,7 @@ height: 7.985146666666666vw;
 
 	height: fit-content;
 
-	background: url(/images/content2.png) 0 0;
+	background: url(../LP/images/content2.png) 0 0;
 
 	background-size: cover;
 
@@ -1917,20 +2116,34 @@ height: 7.985146666666666vw;
 	width: 47.34778666666667vw;
 
 	margin-top: 2.1333333333333333vw;
+
+	display: none;
 	}
 	.event-info{
 		
 	margin: 0;
-		
+			
 	font-family: "blairmditc-tt-medium";
-		
+			
 	font-size: 5.333333333333334vw;
-		
+			
 	color: #3551A2;
-		
-	letter-spacing: 0.07em;
-		
+			
+	letter-spacing: 0.1em;
+			
 	text-align: center;
+			
+	margin-top: 12vw;
+	}
+	.event-info span{
+		
+	position: absolute;
+			
+	left: 0px;
+			
+	margin-top: -9.333333333333334vw;
+			
+	letter-spacing: -0.2em;
 	}
 	.ribbon{
 		
@@ -1938,7 +2151,7 @@ height: 7.985146666666666vw;
 		
 	height: 17.681253333333334vw;
 		
-	background: url(/images/ribbon.png) 0 0;
+	background: url(../LP/images/ribbon.png) 0 0;
 		
 	background-size: cover;
 	}
@@ -1990,7 +2203,7 @@ height: 7.985146666666666vw;
 		
 	height: 137.68887999999998vw;
 		
-	background: url(/images/content2-board.png) 0 0;
+	background: url(../LP/images/content2-board.png) 0 0;
 		
 	background-size: cover;
 		
@@ -2244,7 +2457,7 @@ height: 7.985146666666666vw;
 			
 	height: 225.75072vw;
 			
-	background: url(/images/content2-board-long.png) 0 0;
+	background: url(../LP/images/content2-board-long.png) 0 0;
 			
 	background-size: cover;
 			
@@ -2428,6 +2641,9 @@ height: 7.985146666666666vw;
 	width: 38.37453333333334vw;
 
 	margin-top: 3.2vw;
+
+	display: none;
+
 	}
 	.shimajiro-terms{
 
@@ -2436,6 +2652,9 @@ height: 7.985146666666666vw;
 	font-size: 1.866666666666667vw;
 
 	line-height: 2.1333333333333333vw;
+
+	margin-top: 5.066666666666666vw;
+
 	}
 	.shimajiro-mascot{
 		
@@ -2503,7 +2722,7 @@ height: 7.985146666666666vw;
 		
 	color: white;
 		
-	background: url(/images/ribbon2.png) 0 0;
+	background: url(../LP/images/ribbon2.png) 0 0;
 		
 	width: 90.05503999999999vw;
 		
@@ -2607,7 +2826,7 @@ height: 7.985146666666666vw;
 		
 	height: fit-content;
 		
-	background: url(/images/content3.png) 0 0;
+	background: url(../LP/images/content3.png) 0 0;
 		
 	background-size: cover;
 		
@@ -3116,37 +3335,205 @@ height: 7.985146666666666vw;
 	}
 
 
+	.inquiry{
+
+	width: 82.66666666666667vw;
+
+	height: 22.400000000000002vw;
+
+	background-color: white;
+
+	border: 0.26666666666666666vw solid black;
+
+	display: flex;
+
+	flex-direction: column;
+
+	align-items: center;
+
+	margin-bottom: 8vw;
+
+	}
+	.inquiry-title{
+
+	margin: 0;
+
+	font-family: "UDShinGoCOnizPr6";
+
+	font-size: 3.2vw;
+
+	line-height: 3.2vw;
+
+	letter-spacing: 0.06em;
+
+	font-weight: 600;
+
+	margin-top: 2.666666666666667vw;
+
+	}
+	.inquiry-container{
+
+	display: flex;
+
+	margin-top: 2.666666666666667vw;
+
+	justify-content: center;
+
+	gap: 1.3333333333333335vw;
+
+	}
+	.inquiry-label{
+
+	display: flex;
+
+	flex-direction: column;
+
+	gap: 2.666666666666667vw;
+
+	}
+	.inquiry-label1{
+
+	margin: 0;
+
+	width: 13.258106666666666vw;
+
+	height: 2.5082933333333335vw;
+
+	line-height: 2.5082933333333335vw;
+
+	background-color: #727171;
+
+	font-family: "ShinGoPro";
+
+	font-weight: 400;
+
+	font-size: 1.866666666666667vw;
+
+	text-align: center;
+
+	color: white;
+
+	}
+	.inquiry-label2{
+
+	margin: 0;
+
+	width: 13.258106666666666vw;
+
+	height: 2.5082933333333335vw;
+
+	line-height: 2.5082933333333335vw;
+
+	background-color: #727171;
+
+	font-family: "ShinGoPro";
+
+	font-weight: 400;
+
+	font-size: 1.866666666666667vw;
+
+	text-align: center;
+
+	color: white;
+
+	}
+	.inquiry-desc{
+
+	display: flex;
+
+	flex-direction: column;
+
+	gap: 2.666666666666667vw;
+
+	}
+	.inquiry-desc1{
+
+	margin: 0;
+
+	font-family: "ShinGoPro";
+
+	font-weight: 400;
+
+	font-size: 2.666666666666667vw;
+
+	line-height: 2.1333333333333333vw;
+
+	letter-spacing: -0.03em;
+
+	}
+	.inquiry-desc2{
+		
+	margin: 0;
+			
+	font-family: "ShinGoPro";
+			
+	font-weight: 400;
+			
+	font-size: 2.666666666666667vw;
+			
+	line-height: 3.2vw;
+	}
+
+
 	footer{
 
-	height: 11.013919999999999vw;
+	height: 28.000000000000004vw;
 
 	width: 100%;
 
 	background-color: white;
 
 	margin: 0 auto;
+
 	}
 	.footer-container{
 		
 	display: flex;
-		
+			
 	width: 100vw;
-		
-	height: 11.013919999999999vw;
-		
+			
+	height: 28.000000000000004vw;
+			
 	border-left: 0.26666666666666666vw solid black;
-		
+			
 	border-right: 0.26666666666666666vw solid black;
-		
+			
 	margin: 0 auto;
-		
+			
 	gap: 0;
-		
+			
 	flex-direction: column;
-		
-	justify-content: center;
-		
+			
 	align-items: center;
+	}
+	.event-corp{
+		
+	display: flex;
+			
+	align-items: center;
+			
+	gap: 1.3333333333333335vw;
+			
+	margin-top: 5.333333333333334vw;
+	}
+	.event-corp1{
+
+	margin: 0;
+
+	font-family: "ShinGoPro";
+
+	font-weight: 400;
+
+	font-size: 2.4vw;
+
+	letter-spacing: 0.04em;
+
+	}
+	.event-corp2{
+		
+	width: 39.724106666666664vw;
+			
+	height: 11.205573333333332vw;
 	}
 	.footer-company{
 
@@ -3160,7 +3547,8 @@ height: 7.985146666666666vw;
 
 	letter-spacing: 0.04em;
 
-	margin-top: 1.3333333333333335vw;
+	margin-top: 4vw;
+
 	}
 	.footer-copyright{
 
