@@ -3,55 +3,55 @@
 
 @font-face {
 	font-family: "UDShinGoPr6";
-	src: url("../LP/usedfont/A-OTF-UDShinGoPr6-Regular.otf") format("opentype"); 
+	src: url("/usedfont/A-OTF-UDShinGoPr6-Regular.otf") format("opentype"); 
 	font-weight: 400;
 }
 @font-face {
 	font-family: "UDShinGoPr6";
-	src: url("../LP/usedfont/A-OTF-UDShinGoPr6-Light.otf") format("opentype"); 
+	src: url("/usedfont/A-OTF-UDShinGoPr6-Light.otf") format("opentype"); 
 	font-weight: 300;
 }
 
 @font-face {
 	font-family: "ShinGoPro";
-	src: url("../LP/usedfont/A-OTF-ShinGoPro-DeBold.otf") format("opentype"); 
+	src: url("/usedfont/A-OTF-ShinGoPro-DeBold.otf") format("opentype"); 
 	font-weight: 600;
 }
 @font-face {
 	font-family: "ShinGoPro";
-	src: url("../LP/usedfont/A-OTF-ShinGoPro-Medium.otf") format("opentype"); 
+	src: url("/usedfont/A-OTF-ShinGoPro-Medium.otf") format("opentype"); 
 	font-weight: 500;
 }
 @font-face {
 	font-family: "ShinGoPro";
-	src: url("../LP/usedfont/A-OTF-ShinGoPro-Regular.otf") format("opentype"); 
+	src: url("/usedfont/A-OTF-ShinGoPro-Regular.otf") format("opentype"); 
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: "UDShinGoCOnizPr6";
-	src: url("../LP/usedfont/A-OTF-UDShinGoCOnizPr6-DeB.otf") format("opentype"); 
+	src: url("/usedfont/A-OTF-UDShinGoCOnizPr6-DeB.otf") format("opentype"); 
 	font-weight: 600;
 }
 @font-face {
 	font-family: "UDShinGoCOnizPr6";
-	src: url("../LP/usedfont/A-OTF-UDShinGoCOnizPr6-Reg.otf") format("opentype"); 
+	src: url("/usedfont/A-OTF-UDShinGoCOnizPr6-Reg.otf") format("opentype"); 
 	font-weight: 400;
 }
 
 @font-face {
 	font-family: "blairmditc-tt-medium";
-	src: url("../LP/usedfont/Blaimim.ttf") format("opentype"); 
+	src: url("/usedfont/Blaimim.ttf") format("opentype"); 
 }
 
 @font-face {
     font-family: "FOT-筑紫A丸ゴシック Std*";
-    src: url("../LP/usedfont/筑紫A丸ゴシック.ttf") format("truetype");
+    src: url("/usedfont/筑紫A丸ゴシック.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "TBChibiRGoPlusKStd*";
-    src: url("../LP/usedfont/34831.ttf") format("truetype");
+    src: url("/usedfont/34831.ttf") format("truetype");
 }
 
 
@@ -138,7 +138,7 @@ display: none;
 
 	height: 824.0374px;
 
-	background: url(../LP/images/content1.png) 0 0;
+	background: url(/images/content1.png) 0 0;
 
 	background-size: cover;
 
@@ -256,7 +256,7 @@ display: none;
 
 	height: 188.5532px;
 
-	background: url(../LP/images/event-container.png) 0 0;
+	background: url(/images/event-container.png) 0 0;
 
 	background-size: contain;
 
@@ -348,7 +348,7 @@ display: none;
 
 	height: fit-content;
 
-	background: url(../LP/images/content2.png) 0 0;
+	background: url(/images/content2.png) 0 0;
 
 	background-size: cover;
 
@@ -405,7 +405,7 @@ display: none;
 		
 	height: 66.3047px;
 		
-	background: url(../LP/images/ribbon.png) 0 0;
+	background: url(/images/ribbon.png) 0 0;
 		
 	background-size: cover;
 	}
@@ -457,7 +457,7 @@ display: none;
 		
 	height: 516.3333px;
 		
-	background: url(../LP/images/content2-board.png) 0 0;
+	background: url(/images/content2-board.png) 0 0;
 		
 	background-size: cover;
 		
@@ -711,7 +711,7 @@ display: none;
 			
 	height: 846.5652px;
 			
-	background: url(../LP/images/content2-board-long.png) 0 0;
+	background: url(/images/content2-board-long.png) 0 0;
 			
 	background-size: cover;
 			
@@ -976,7 +976,7 @@ display: none;
 		
 	color: white;
 		
-	background: url(../LP/images/ribbon2.png) 0 0;
+	background: url(/images/ribbon2.png) 0 0;
 		
 	width: 337.7064px;
 		
@@ -1067,7 +1067,7 @@ display: none;
 		
 	height: fit-content;
 		
-	background: url(../LP/images/content3.png) 0 0;
+	background: url(/images/content3.png) 0 0;
 		
 	background-size: cover;
 		
@@ -1884,7 +1884,7 @@ display: none;
 
 	height: 219.74330666666665vw;
 
-	background: url(../LP/images/content1.png) 0 0;
+	background: url(/images/content1.png) 0 0;
 
 	background-size: cover;
 
@@ -2003,7 +2003,7 @@ height: 7.985146666666666vw;
 
 	height: 50.28085333333333vw;
 
-	background: url(../LP/images/event-container.png) 0 0;
+	background: url(/images/event-container.png) 0 0;
 
 	background-size: contain;
 
@@ -2095,7 +2095,7 @@ height: 7.985146666666666vw;
 
 	height: fit-content;
 
-	background: url(../LP/images/content2.png) 0 0;
+	background: url(/images/content2.png) 0 0;
 
 	background-size: cover;
 
@@ -2151,7 +2151,7 @@ height: 7.985146666666666vw;
 		
 	height: 17.681253333333334vw;
 		
-	background: url(../LP/images/ribbon.png) 0 0;
+	background: url(/images/ribbon.png) 0 0;
 		
 	background-size: cover;
 	}
@@ -2203,7 +2203,7 @@ height: 7.985146666666666vw;
 		
 	height: 137.68887999999998vw;
 		
-	background: url(../LP/images/content2-board.png) 0 0;
+	background: url(/images/content2-board.png) 0 0;
 		
 	background-size: cover;
 		
@@ -2457,7 +2457,7 @@ height: 7.985146666666666vw;
 			
 	height: 225.75072vw;
 			
-	background: url(../LP/images/content2-board-long.png) 0 0;
+	background: url(/images/content2-board-long.png) 0 0;
 			
 	background-size: cover;
 			
@@ -2722,7 +2722,7 @@ height: 7.985146666666666vw;
 		
 	color: white;
 		
-	background: url(../LP/images/ribbon2.png) 0 0;
+	background: url(/images/ribbon2.png) 0 0;
 		
 	width: 90.05503999999999vw;
 		
@@ -2826,7 +2826,7 @@ height: 7.985146666666666vw;
 		
 	height: fit-content;
 		
-	background: url(../LP/images/content3.png) 0 0;
+	background: url(/images/content3.png) 0 0;
 		
 	background-size: cover;
 		
