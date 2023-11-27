@@ -8,12 +8,6 @@
 <body>
     <iframe id="your-iframe-id" src="https://trakteer.id/zorotakeru/stream?key=trstream-aX1tgnviIW3srBIwIIIi&nt_dir=right&nt_tts=false&nt_audio=%2Fstorage%2Faudio%2Fsetting-uploads%2Floj65pv8w0d5v8nd%2F1659534300_1jPtKEau.mp3&nt_delay=10&nt_theme=simple&nt_1_clr1=rgba%28255%2C+249%2C+79%2C+1%29&nt_1_clr2=rgba%2818%2C+248%2C+255%2C+1%29&nt_2_clr1=rgba%2890%2C+154%2C+255%2C+1%29&nt_tts_voice_name=male&nt_tts_voice_rate=1.2"></iframe>
     <script>
-        const express = require('express');
-        const fetch = require('node-fetch');
-        const app = express();
-        const PORT = 3000;
-
-        app.get('/api/supports', (req, res) => {
         fetch('https://api.trakteer.id/v1/public/supports?limit=5&page=1', {
             method: 'GET',
             headers: {
@@ -22,12 +16,12 @@
                 'key': 'trapi-8Atcsm7gFO7bvTIgUjvMZP3Z'
             }
         })
-        .then(apiRes => apiRes.json())
-        .then(data => res.json(data))
-        .catch(error => res.status(500).json({ error }));
-        });
-
-        app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+        .then(response => response.json())
+        .then(data => {
+            // Process the data
+            console.log(data);
+        })
+        .catch(error => console.error('Error:', error));
     </script>
 </body>
 </html>
